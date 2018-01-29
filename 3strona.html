@@ -5,62 +5,42 @@
         <meta charset="UTF-8">
         <meta http-equiv="Content-Language" content="pl">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Kurale&subset=latin,latin-ext'
+              rel='stylesheet' type='text/css'>
         <style>
-            * {font-family: 'Kurale', serif; margin: 0; font-size: 16px; }
-            body { background: url('IMAGE/tlostarypapier.jpg'); 
-                   background-size: 100% 100%;} 
+            * {font-family: 'Kurale', sans-serif; margin: 0; font-size: 16px; }
+            body { background: url('IMAGE/tlostarypapier.jpg'); background-size: 100% 100%;} 
 
-            .main-div {width: 100%;display:grid; margin-top:0; margin-left:0%;
+            .main-div {width: 100%;display:grid; margin-top:1%; margin-left:0%;
                        grid-template-columns: repeat(20, 5%);
                        grid-template-rows: repeat(8, auto);
             }
-            .title-gr {grid-area: 1/5/2/17; color: #330000;
-                       padding: 8% 10% 6% 21%; 
+            .title-gr {grid-area: 1/5/2/17; color: #330000; padding: 8% 10% 6% 21%; 
                        font-size: 33px; font-weight: bold; text-align: left;}
-            .photo-1 {grid-area: 2/6/3/8; padding: 0%;
+            .photo-1 {grid-area: 2/6/3/8; padding: 0%; 
             }
-            .im-11 {top: 13%; width: 10%; opacity: 0; position: absolute;
-            transition: opacity 1s ease-out 0.1s; 
-            transition: width 1s ease-out 1s;}
-            .im-11:hover {opacity: 1;}
-            .im-11:hover {width: 20%;}
-            .im-12 {width: 100%; border: 1px solid black; opacity: 1;}
+            .photo-1 img {width: 100%; border: 1px solid black;}
             .head-1 {grid-area: 2/8/3/17; color: #330000; padding: 3% 28% 3% 4%; 
                      text-align: left; line-height: 18px; }
-            .art-1 {grid-area: 3/6/4/17; color: #330000; padding-left: 8%; 
-                    text-align: left; line-height: 25px; padding-right: 5%;
-                    background: url('IMAGE/tlooldpaper.jpg'); 
-                    background-size: 100% 100%;}
-            .first-1 {padding-top: 15%;}
-            /*     .photo-2 {grid-area: 4/6/5/11;  
-                           background-color: black;
-                 }*/
-            .photo-2 {width: 50%;float: left; 
-                      position: relative; 
-/*                      top: 40px; 
-                      left: -70px;*/ }
-            .photo-3 {width: 50%;float: right; 
-                      position: relative; 
-               /*       top: 40px; 
-                      left: -70px; */}
-            .photo-2 img {width: 80%;padding-left: 8%;
-                          padding-top: 0%; }
-            /*     .photo-3 {grid-area: 4/11/5/17; padding-left: 10%;
-                           padding-top: 13%;
-                           
-                 }*/
-            .photo-3 img {width: 65%;}
-            .art-2 {grid-area: 6/6/7/17; color: #330000; padding-left: 8%;
-                    text-align: left; line-height: 25px;  padding-right: 5%;
-                    background: url('IMAGE/tlooldpaper.jpg'); 
-                    background-size: 100% 100%;}
+            .art-1 {grid-area: 3/6/4/17; color: #330000; padding: 15% 13% 15% 15%; 
+                    text-align: left; line-height: 25px;
+                    background: url('IMAGE/tlooldpaper.jpg'); background-size: 100% 100%;}
+            .photo-2 {grid-area: 4/6/5/11;  
+                      background-color: black;
+            }
+            .photo-2 img {width: 95%;padding-left: 14%;
+                          padding-top: 15%; }
+            .photo-3 {grid-area: 4/11/5/17; padding-left: 10%;
+                      padding-top: 13%;
+                      background-color: black;
+            }
+            .photo-3 img {width: 85%;}
+            .art-2 {grid-area: 5/6/6/17; color: #330000; padding: 15% 13% 15% 15%; 
+                    text-align: left; line-height: 25px;
+                    background: url('IMAGE/tlooldpaper.jpg'); background-size: 100% 100%;}
             .art-2 a {color: #330000;}
             .art-2 a:hover { color: brown;}
-            .im-p {grid-area: 4/6/5/17; color: white; text-align: center;
-                  background-color: black; padding-top: 3%;}
-            .dd-1 {grid-area: 5/6/6/17; color: white; text-align: center;
-                  background-color: black; font-size: 15px;}
+            p {margin-bottom: 10px;}
             @media only screen 
             and (max-width: 800px) {* {font-size: 12px;} 
                                     .title-gr {font-size: 15px;}
@@ -69,8 +49,6 @@
                                                    9% 9% 9% 9% 9% 9%;
                                                grid-template-rows: repeat(8, auto);
                                     }
-                                    .im-11 {transition: none;}
-                                    .im-11:hover {opacity: 0;}
                                     img {width: 100%; margin-left: 0%;}}
             </style>
         </head>
@@ -80,15 +58,14 @@
                 Kto ma Bejsce, ma dobre miejsce...
             </div>
             <div class="photo-1">
-                <img class="im-12" alt="" src="IMAGE/Adam%20Sawicki%20opowiada.jpg">
-                <img class="im-11"  alt="" src="IMAGE/Adam-Sawicki.jpg">
+                <img alt="" src="IMAGE/Adam%20Sawicki%20opowiada.jpg" width="200" height="260">
             </div>
             <div class="head-1">
                 <p><i><b>Adam Sawicki urodził się w Bejscach i aż do śmierci był gospodarzem w rodzinnym majątku. Oto jego barwna opowieść o tym, jak nasz rodzina trafiła do tej uroczej miejscowości.</b></i></p>
-                (Wspomnienia spisał Bartłomiej Czech)
+                        (Wspomnienia spisał Bartłomiej Czech)
             </div>
             <div class="art-1">
-                <p class="first-1">Sawiccy w połowie XIX wieku mieszkali w guberni wileńskiej.
+                <p>Sawiccy w połowie XIX wieku mieszkali w guberni wileńskiej.
                     Mieli warsztat stolarski, własny dom, kawałek sadu, kilka uli z
                     pszczołami i nieduży staw z rybami. Byli pracowici i zaradni, 
                     więc dobrze im się  powodziło. Pewnego dnia jakiś dobry znajomy
@@ -143,21 +120,16 @@
                     pracy jako sprzedający i kierownik karczmy, odpowiedzialny za 
                     całość zaopatrzenia w towar. Zaproponowano mu godziwe 
                     wynagrodzenie, a praca od następnego dnia. To dziadka Tomasza
-                    bardzo ucieszyło.<br><br></p>
+                    bardzo ucieszyło.</p>
             </div>
-            <div class="im-p">
-                <div class="photo-2">
-                    <img alt="" src="IMAGE/pałac%20w%20Bejscach.jpg">
-                </div>
-                <div class="photo-3">
-                    <img alt="" src="IMAGE/pałac%20w%20Bejscach2.jpg">
-                </div>
+            <div class="photo-2">
+                <img alt="" src="IMAGE/pałac%20w%20Bejscach.jpg"><p> Pałac w Bejscach</p>
             </div>
-                <div class="dd-1">
-                    <p>Pałac w Bejscach</p>
-                </div>
-                <div class="art-2">
-                <p class="first-1">Ale każdego dnia rano musiał dziadek z Koszyc chodzić pieszo do
+            <div class="photo-3">
+                <img alt="" src="IMAGE/pałac%20w%20Bejscach2.jpg">
+            </div>
+            <div class="art-2">
+                <p>Ale każdego dnia rano musiał dziadek z Koszyc chodzić pieszo do
                     Bejsc i po pracy wieczorem dosyć późno wracać. To było nie
                     tylko męczące ale i niebezpieczne. Po miesiącu pracy dziedzic
                     wezwał dziadka do biura i powiedział, że ma taki mały dom koło
@@ -225,7 +197,7 @@
                     pamiętało kilka pokoleń, rodzili się wszyscy Sawiccy, dopóki
                     pożar w 1960 roku nie strawił go doszczętnie.</p><p>
                     I tak narodziła się nowa linia Sawickich.
-                    <a href="4strona.html">Sawickich z Bejsc.</a><br><br><br></p>
+                    <a href="4strona.html">Sawickich z Bejsc.</a></p>
             </div>
         </div>
     </body>
