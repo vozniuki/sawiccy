@@ -8,20 +8,27 @@
         <style>
             * {font-family: 'Kurale', serif; margin: 0; padding: 0; position: relative;}
             body { margin: 0; background: url('IMAGE/tloant.jpg');  }
-            .sh-div {width: 800px;height: 2850px; margin-top: 43px;}
-            .gr-photo-1 {width: 300px; height: 2900px; float: left;}
-            .im-1 {padding: 0% 0% 0 0%;width: 285px; padding: 20px 5px;}
-			.im-2 {padding: 0% 0 0 0%;width: 285px; padding: 20px 5px;}
-            .img-p {margin-left: 15px; margin-right: 10px;  margin-bottom: 10px;
-                    font-size:15px; color: #FFE4B5;text-align: left;}
-            .gr-art-1 {width: 450px; height: 2550px; color:#FFFACD; float: right;
-                       background: url('IMAGE/tlo-ant011.jpg'); font-size:14.3px;
+            .sh-div {width: 800px;height: 2555px; margin-top: 43px;}
+            .gr-photo-1 {width: 350px; height: 2550px; float: left;}
+            
+            .im-1 {width: 285px; padding: 20px 5px 0; transition: transform .2s;}
+            .im-2 {width: 320px; padding: 20px 5px 0; transition: transform .2s;}
+            .im-3 {width: 285px; padding: 15px 80px; 
+                  transition: transform .2s;} 
+            .im-4 {width: 285px; padding: 15px 25px;transition: transform .2s; } 
+            
+            
+            .img-p {width: 310px; padding-bottom: 10px; font-size:19px; 
+                    color: #FFE4B5; text-align: center;padding-right: 20px; 
+                    padding-left: 20px;}
+            .gr-art-1 {width: 450px; height: 2530px; color:#FFFACD; float: right;
+                       background: url('IMAGE/tlo-ant011.jpg'); font-size:14.5px;
                        background-repeat: repeat-y; background-size: 100%; 
                        padding: 25px 0px 0px 0px;}
             .gr-art-1 p {margin-top: 10px; background-color: rgba(16,39,30,0.2); 
                          padding-left: 57px; padding-right: 45px; 
-                         text-align: left;
-            }
+                         text-align: left; }
+            p span {padding-left:  120px; text-align: center;}
             .gr-art-1 a {color: #FFE4B5;}
             .interval-2 {width: 800px; height: 20px; }
             .gr-photo-1-3 {width: 800px; height: 220px;}
@@ -31,88 +38,154 @@
             .interval-1 {width: 800px; height: 50px; }
             .footer-1 {width: 800px;}
             .footer-1 a {color:#FFE4B5; padding-bottom: 30px}
-            .im-d-1 {padding-top:0%;width: 120px; height: 180px; left: 90px;float: left;}
-            .im-d-2 {padding-top:0%;width: 120px; height: 180px; left: 210px;float: left;}
-            .im-d-3 {padding-top:0%;width: 120px; height: 180px; left: 320px; float: left;}
+            .im-d-1 {padding-top:0;width: 120px; height: 180px; left: 90px;float: left;}
+            .im-d-2 {padding-top:0;width: 120px; height: 180px; left: 210px;float: left;}
+            .im-d-3 {padding-top:0;width: 120px; height: 180px; left: 320px; float: left;}
+            .im-d-4 {padding-top:0;width: 120px; height: 180px; left: 210px;float: left;}
+            .im-d-5 {padding-top:0;width: 120px; height: 180px; left: 320px;float: left;}
             .im-1-1 {padding-top:5%; ;width: 150px; }
-            .img-pp {margin-bottom: 0px; font-size:15px; color: #FFE4B5;text-align: center;}
+           
+            .im-1:hover, .im-2:hover, .im-3:hover, .im-4:hover {-ms-transform: scale(2); /* IE 9 */
+                -webkit-transform: scale(2); /* Safari 3-8 */
+                transform: scale(2); z-index: 9999;
+            }
+            .img-pp {margin-bottom: 0px; width: 150px; color: #FFE4B5;text-align: center;}
         </style>
     </head>
     <body>
     <center>
         <div class="sh-div">
-                <div class="gr-photo-1">
-                    <img class="im-1"  alt="" src="IMAGE/Antoni-Senior01.jpg">
-                    <img class="im-1"  alt="" src="IMAGE/Maria-Lech01.jpg"> 
-					
-                    <img class="im-2"  alt="" src="IMAGE/Maria-z-dziecmi04.jpg">
-                    <img class="im-2"  alt="" src="IMAGE/Maria-z-dziecmi06.jpg">
-                    <p><img class="im-3"  alt="" src="IMAGE/Maria-z-dziecmi02.jpg"> 
-					 <p class="img-p">Od lewej: Stanisław Sawicki, Helena Lech, Krystyna Sawicka, Jerzy Sawicki, Zdzisław Sawicki (najmłodszy), Maria Lech (Sawicka), Zofia Sawicka. Solec Stary, 1930 rok.
- <p><img class="im-1"  alt="" src="IMAGE/Maria-Antoni-dzieci01.jpg"> 
-					 <p class="img-p">Od lewej: Maria, Krystyna, Antoni, Jerzy, Stanisław.</p>
-<img class="im-2"  alt="" src="IMAGE/Antoni-Krystyna-Zofia-dziecko.jpg">
-                    <p class="img-p">Maria-Antoni</p>
+            <div class="gr-photo-1">
+                <p><img class="im-1"  alt="" src="IMAGE/Antoni-Senior01.jpg"></p>
+                <p class="img-p">Antoni Sawicki></p>
+                <img class="im-1"  alt="" src="IMAGE/Maria-Lech01.jpg"> 
+                <p class="img-p">Maria Lechówna</p>
+                <img class="im-1"  alt="" src="IMAGE/Maria-z-dziecmi04.jpg">
+                <img class="im-1"  alt="" src="IMAGE/Maria-z-dziecmi06.jpg">
+                <!--p class="img-p">Maria z synami.</p-->
+                <p><img class="im-2"  alt="" src="IMAGE/Maria-z-dziecmi02.jpg"> 
+                <p class="img-p">Od lewej: Stanisław, Helena Lech,
+                    <br> Krystyna, Jerzy, Zdzisław (najmłodszy), Maria, Zofia. 
+                    Solec Stary, 1930 rok.</p>
+                <p><img class="im-1"  alt="" src="IMAGE/Maria-Antoni-dzieci01.jpg"></p> 
+                <p class="img-p">Od lewej: Maria, Krystyna, Antoni, Jerzy,
+                    Stanisław.</p>
+                <img class="im-2"  alt="" src="IMAGE/Antoni-Krystyna-Zofia-dziecko.jpg">
+                <p class="img-p">Zofia, Krystyna i Antoni</p>
+            </div>
+            <div class="gr-art-1">
+                <p><b> Antoni Sawicki </b> urodził się w 13.06.1885 roku w 
+                    Bejscach. Po ukończeniu miejscowej szkoły powszechnej 
+                    wyruszył po nauki do Krakowa. Kształcił się w Szkole 
+                    Rolniczej, którą ukończył w 1908 roku i został 
+                    specjalistą od  technologii żywienia. A ściślej: 
+                    gorzelnikiem. Podtrzymał w ten sposób tradycję Sawickich
+                    z Bejsc - przez lata administrowali oni dworską karczmą,
+                    a wyszynk był tam osią interesu.</p><p> Dodać trzeba, że w
+                    ówczesne dwory utrzymywały się przy życiu głównie z
+                    monopolu na produkcję okowity. Destylatornie były w
+                    rozkwicie, zatem gorzelnik nie mógł narzekać na brak
+                    pracy.</p> <p>
+                    W wieku trzydziestu lat ożenił się z panną Lechówną, 
+                    jeszcze wtedy niepełnoletnią, jak byśmy dziś powiedzieli.
+                    Mimo, iż panna była posażna, a jej rodzice mieli spory
+                    majątek, młodzi Sawiccy zmuszeni byli przeprowadzać się 
+                    z miejsca na miejsce, bo specjalistów takich jak Antoni
+                    było niewielu, a zapotrzebowanie na wodę życia ogromne.</p>
+                <img class="im-3"  alt="" src="IMAGE/Maria-Antoni011.jpg">
 
-</p> 
-
-
-                </div>
-                <div class="gr-art-1">
-                    <p><b> Antoni Sawicki </b> urodził się w 1880  roku w Bejscach. Po ukończeniu miejscowej szkoły powszechnej wyruszył po nauki do Krakowa. Kształcił się w Uniwersytecie Jagiellońskim i został specjalistą od  technologii żywienia. A ściślej: gorzelnikiem. Podtrzymał w ten sposób tradycję Sawickich z Bejsc - administrowali oni dworską karczmą, a wyszynk był tam osią interesu.<p> Dodać trzeba, że w ówczesne dwory utrzymywały się przy życiu głównie z monopolu na produkcję okowity. Destylatornie były w rozkwicie, zatem gorzelnik nie mógł narzekać na brak pracy. 
-W wieku 30 lat ożenił się z panną Lechówną, jeszcze wtedy niepełnoletnią, jak byśmy dziś powiedzieli. Mimo, iż panna była posażna, młodzi Sawiccy zmuszeni byli przeprowadzać się z miejsca na miejsce, bo specjalistów takich jak Antoni było niewielu, a zapotrzebowanie na wodę życia ogromne.
-                    <p><img class="im-3"  alt="" src="IMAGE/Maria-Antoni011.jpg"> 
-					
-                        <p class="img-p">Maria i Antoni</p>
-                    <p>Jakiś czas Sawiccy mieszkali w Siedliskach koło Nakła. Siedliska mają swoją ciekawą historię, o jakiej  <a href="">poczytacie tutaj.</a>Następnie przeprowadzili się do Ciemierników, gdzie urodziła się kolejna córka - Zofia.  </p> 
-						
-						
-
-</p>
-                        
-                    <p>Dzieci przybywało, w końcu musiały pójść do szkoły, więc Maria i Antoni osiedli w Kielcach. Byl już wtedy ludźmi zamożnymi. Mieszkali w eleganckim i sporym mieszkaniu, stać ich też było na kształcenie córek i synów. Antoni zaryzykował nawet pewną kwotę i zainwestował ją w spółkę. Wspólnik okazał się jednak nieuczciwy, pieniędzy nie chciał oddać, bo ich już nie miał. Ale Antoni był stanowczy, a według rodzinnej legendy pomagała mu w tym dwururka, i wymusił na oszuście zrzeczenie się kawałka ziemi w Solcu Starym. To Antoniego w pełni zadawalało, gdyż w tejże wsi od lat gspodarowali już teściowie - Teofila i Tomasz Lechowie.  </p> 
-					<p>
-					
-					Z ziemią Lechów wiąże się również intrygująca historia. Otóż któregoś dnia, osuszając bagna wchodzące w skład ich ówczesnego gospodarstwa, natknęli się na skrzynię ze skarbami. Co tam było - dziś nie wiadomo, ale musiały to być aktywa znacznej wartości, bo Lech zdołał wykupić kilka okolicznych wsi. Zgromadził w ten sposób ponad 300 hektarów. </p>
-					
-						
-					 
-					<p> Pochodzenie skarbu jest łatwe do wyjaśnienia i dość prawdopodopodobne. W czasie Powstania Styczniowego chłopi łupili co się da, w tym rosyjskie banki. Możliwe zatem, że w skrzyniach utopionych w bagnach znajdowały się właśnie zasoby jakiegoś okolicznego banku. Niestety, z bogactwa pozostało niewiele. Resztówkę zajęła później Zofia z domu Sawicka i jej mąż Jerzy Kowalik. Gospodarowali tam do śmierci.
-                    <p>Kieleckie wygodne życie także okazało się krótkotrwałe. Przyszła wojna, a teren, gdzie stała kamienica Sawickich, przeznaczono pod żydowskie getto. Rodzina zabrała cały dobytek i przeniosła się do Starego Solca, gdzie już mieli swoją zimię i stodołę  na niej. </p>
-<p>					W stodole złożyli mienie, a sami zamieszkali u sąsiadów. Choć było im tam wygodnie, a sąsiedzi otrzymywali za to nielichą zapłatę, Sawiccy zamarzyli o czymś swoim. Mimo wojny zbudowali niewielki dom, ale nie zdążyli przenieść do niego przedmiotów przewiezionych z Kielc, gdyż w czasie przechodzącego obok frontu i toczących się wokół zaciętych walk stodoła spłonęła. </p>
-<p> Po wojnie Antoni Sawicki znalazł się na jakiś w Dobrodzieniu, gdzie pracował w tamtejszej gorzelni. Miał towarzysza o nazwisku Tomasik, nauczyciela matematyki w szkole Tomasik pochodził z okolicy Solca Starego, byli zatem niemal krajanami. Tenże Tomasik miał stryjecznego brata, jaki kształcił się na lekarza. Antoniemu pomyślał, że to dobra partia dla jego najstarszej córki Krystyny. Co rychlej wyswatał młodych. Ślub odbył się w Krakowie, o czym dalej. </p>
- <p><img class="im-3"  alt="" src="IMAGE/Antoni-Senior-z-Maria03.jpg"> 
-					
-<p>Ostatnie lata życia Sawiccy spędzili w swoim gospodarstwie w Solcu Starym. </p>
-						
-</p>
-                    <p>
-                    <p>.</p>
-                    <p></p> 
-
-                </div>
-        </div>
+                <p><span>Maria i Antoni<br></span>
+                    Jakiś czas Sawiccy mieszkali w Siedliskach koło Nakła. 
+                    Siedliska mają swoją ciekawą historię, o jakiej  
+                    <a href="">poczytacie tutaj.</a> Następnie
+                    przeprowadzili się do Ciemierników, gdzie urodziła się
+                    kolejna córka - Zofia.  </p> 
+                <p>Dzieci przybywało, w końcu musiały pójść do szkoły, więc 
+                    Maria i Antoni osiedli w Kielcach. Byl już wtedy ludźmi
+                    zamożnymi. Mieszkali w eleganckim i sporym mieszkaniu, 
+                    stać ich też było na kształcenie córek i synów. Antoni 
+                    zaryzykował nawet pewną kwotę i zainwestował ją w spółkę.
+                    Wspólnik okazał się jednak nieuczciwy, pieniędzy nie 
+                    chciał oddać, bo ich już nie miał. Ale Antoni był 
+                    stanowczy, a według rodzinnej legendy pomagała mu w tym
+                    dwururka, i wymusił na oszuście zrzeczenie się kawałka
+                    ziemi w Solcu Starym. To Antoniego w pełni zadawalało,
+                    gdyż w tejże wsi od lat gospodarowali już teściowie -
+                    <a href="">  Teofila i Tomasz Lechowie. </a> </p> 
+                <p>Z ziemią Lechów wiąże się również intrygująca historia. 
+                    Otóż któregoś dnia, osuszając bagna wchodzące w skład 
+                    ich ówczesnego gospodarstwa, natknęli się na skrzynię
+                    ze skarbami. Co tam było - dziś nie wiadomo, ale musiały 
+                    to być aktywa znacznej wartości, bo Lech zdołał wykupić
+                    kilka okolicznych wsi. Zgromadził w ten sposób ponad 300
+                    hektarów. </p>
+                <p> Pochodzenie skarbu jest łatwe do wyjaśnienia i dość 
+                    prawdopodopodobne. W czasie Powstania Styczniowego
+                    chłopi łupili co się da, w tym rosyjskie banki. Możliwe
+                    zatem, że w skrzyniach utopionych w bagnach znajdowały
+                    się właśnie zasoby jakiegoś okolicznego banku. Niestety,
+                    z bogactwa pozostało niewiele. Resztówkę zajęła później
+                    Zofia z domu Sawicka i jej mąż Jerzy Kowalik.
+                    Gospodarowali tam do śmierci.</p>
+                <p>Kieleckie wygodne życie także okazało się krótkotrwałe.
+                    Przyszła wojna, a teren, gdzie stała kamienica 
+                    Sawickich, przeznaczono pod żydowskie getto. Rodzina 
+                    zabrała cały dobytek i przeniosła się do Starego Solca,
+                    gdzie już mieli swoją zimię i stodołę  na niej. </p>
+                <p>	W stodole złożyli mienie, a sami
+                    zamieszkali u sąsiadów. Choć było im tam wygodnie, a 
+                    sąsiedzi otrzymywali za to nielichą zapłatę, Sawiccy
+                    zamarzyli o czymś swoim. Mimo wojny zbudowali niewielki 
+                    dom, ale nie zdążyli przenieść do niego przedmiotów
+                    przewiezionych z Kielc, gdyż w czasie przechodzącego 
+                    obok frontu i toczących się wokół zaciętych walk stodoła 
+                    spłonęła. </p>
+                <p> Po wojnie Antoni Sawicki mieszkał jakiś czas w
+                    Dobrodzieniu, gdzie pracował w tamtejszej gorzelni. Miał
+                    towarzysza o nazwisku Tomasik, nauczyciela matematyki w
+                    szkole średniej. Tomasik pochodził z okolicy Solca 
+                    Starego, byli zatem niemal krajanami. Tenże Tomasik miał
+                    stryjecznego brata, jaki kształcił się na lekarza. 
+                    Antoni pomyślał, że to dobra partia dla jego najstarszej
+                    córki Krystyny. Co rychlej wyswatał młodych. Ślub odbył
+                    się w Krakowie,<a href="">  o czym tutaj </a></p>
+                <p><img class="im-4"  alt="" src="IMAGE/Antoni-Senior-z-Maria03.jpg"> </p>
+                <p>Ostatnie lata życia Sawiccy spędzili w swoim gospodarstwie
+                    w Solcu Starym. Franciszek zmarł 17.09.1961 roku w Solcu 
+                    Starym, pochowany został na cmentarzu w Szydłowie.</p>
+            </div>   
+        </div>           
         <div class="interval-2"></div>
         <div class="gr-ph-title"><span>Maria i Antoni mieli pięcioro dzieci:
             </span>
         </div>
         <div class="gr-photo-1-3">  
+            <div class="im-d-4"> 
+                <img class="im-1-1" alt='' src="IMAGE/Krystyna.jpg">
+                <p class="img-pp">Krystyna</p>
+            </div>
+            <div class="im-d-5">
+                <img class="im-1-1" src="IMAGE/Zofia.jpg">
+                <p class="img-pp">Zofia</p>
+            </div>
+        </div>              
+        <div class="gr-photo-1-3">  
             <div class="im-d-1"> 
-                <img class="im-1-1" alt='' src="IMAGE/Adam-Sawicki.jpg">
-                <p class="img-pp">Adam</p>
+                <img class="im-1-1" alt='' src="IMAGE/Stanisław.jpg">
+                <p class="img-pp">Stanisław</p>
             </div>
             <div class="im-d-2">
-                <img class="im-1-1" src="IMAGE/Kamila-Sawicka.jpg">
-                <p class="img-pp">Kamila</p>
+                <img class="im-1-1" src="IMAGE/Jerzy.jpg">
+                <p class="img-pp">Jerzy</p>
             </div>
             <div class="im-d-3">
-                <img class="im-1-1" src="IMAGE/Anna-Sawicka.jpg">
-                <p class="img-pp">Anna</p>
+                <img class="im-1-1" src="IMAGE/Zdzisław.jpg">
+                <p class="img-pp">Zdzisław</p>
             </div>
         </div>              
         <div class="interval-1"></div>
         <div class="footer-1">
-            <a href="">Wróć do poprzedniej strony</a>
+            <a href="Sawiccy-z-Bejsc.html"> Wróć do poprzedniej strony</a>
         </div>
     </center>
 </body>
