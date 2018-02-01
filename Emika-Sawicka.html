@@ -1,67 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Language" content="pl">
-        <meta name="generator" content="Bluefish 2.2.9" >
-        <meta name="ProgId" content="FrontPage.Editor.Document">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
         <title>Emika Sawicka</title>
-<link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">        
         <link rel="stylesheet" href="zwm/Modal-Dialog.css" type="text/css"/>
-        <base target="_self">
         <style>
-            * {font-family: 'Kurale', serif; margin: 0; position: relative;}
-            body { margin: 0; background: url('IMAGE/tlotapeta.jpg');
-            }
+            * {font-family: 'Kurale', serif; margin: 0; padding: 0;
+               position: relative; font-size:15px;}
+            body { margin: 0; background: url('IMAGE/tlotapeta.jpg');  }
             a:hover {color: brown;}
-            .sh-div {width: 100%;display:grid; 
-                     grid-template-columns: repeat(20, 5%);
-                     grid-template-rows: repeat(8, auto);margin-top: 53px;
-                     margin-left: 0% ;}
-            .gr-photo-1 {grid-area: 1/5/4/10; position: static;}
-            .gr-photo-1-1 {grid-area: 4/5/5/11 ;}
-            .gr-photo-1-1 p {margin: 0px auto 20px auto;}
-            .gr-photo-1-2 {grid-area: 6/5/7/11 ;}
-            .gr-photo-2-2 {grid-area: 6/11/7/17 ;}
-            .gr-photo-3-4 {grid-area: 8/5/9/11;}
-            .gr-photo-4-4 {grid-area: 8/11/9/17 ;}
-            .gr-art-1 {grid-area: 1/10/4/17 ; padding:  1% 5%;}
-            .gr-art-1 p {margin-top: 10px;}
-            .gr-art-1 a {color: black;}
-            .gr-art-2 {grid-area: 3/10/4/17 ; padding:  1% 5%;}
-            .gr-art-2 a {color: black;}
-            .gr-art-2 a:hover {color: black; }
-            .gr-art-3 {grid-area: 2/10/3/14 ; padding: 1% 1%;}
-            .gr-art-4 {grid-area: 2/14/3/17 ; padding: 1% 1%;}	
-            div[class^="gr-art"] { color:black; font-size: 1.4em;
+            .sh-div {width: 800px;height: 850px; margin-top: 43px;}
+            .gr-photo-1 {width: 350px; height: 870px; float: left;}
+            div[class^="gr-photo"] {background: url('IMAGE/tlo01.jpg'); border: 0;}
+            .im-1-min {position: relative; padding: 35px 52px 0 52px; width: 175px;}
+            .im-1-max {position: absolute; top: 12%; left: 25%; width: 50%; opacity: 0;}
+            .im-2-min {position: relative; padding: 17px 35px 0 35px; width: 245px;}
+            .im-2-max {position: absolute; top: 7%; left: 15%; width: 70%; opacity: 0;}
+            .im-1-max:hover {opacity: 1; top: -20px; width: 300px; z-index: 99999;}
+            .im-2-max:hover {opacity: 1; width: 350px; top: -70px; z-index: 99999;}
+            .im-5-min {position: relative; padding: 42px 35px 0 35px; width: 245px;}
+            .im-5-max {position: absolute; top: 12px; left: 16px; opacity: 0; width: 245px;}
+            .im-5-max:hover {opacity: 1; width: 350px; top: -70px; z-index: 99999;}
+            .img-p {margin-left: 10px; margin-right: 10px; margin-bottom: 10px;
+            }
+            .gr-art-1 {width: 450px; height: 845px; float: right; 
+                       padding: 25px 0px 0px 0px;}
+            .gr-art-1 p {margin-top: 10px; padding-left: 57px; padding-right: 45px; 
+                         text-align: left; }
+            div[class^="gr-art"] { color:black; 
                                    background: url('IMAGE/tlo011.jpg');
                                    text-align: left;}	   
-            div[class^="gr-art-5"] {text-align: center;}
-            .gr-art-5 {grid-area: 4/5/5/17 ; padding: 5% 1%;font-size:2em;}		   
-            .interval-1 {grid-area: 7/1/8/21 ;height: 50px; }
-            .interval-2 {grid-area: 9/1/10/21 ;height: 50px; }
-            .footer-1 {grid-area: 10/5/11/17;}
-            .footer-1 a {color:black;}
-            div[class^="footer"] {height: 50px;  padding-top: 12px;}
-            div[class^="footer"], 
-            div[class^="gr-photo"] {padding-bottom: 5%;
-                                    background: url('IMAGE/tlo01.jpg');
-                                    border: 0;color: black; size:3px; text-align: center;}
-            .im-1-min {position: relative; padding: 10% 15% 0 15%;width: 50%;}
-            .im-1-max {position: absolute; top: 12%; left: 25%; width: 50%; opacity: 0;}
-            .im-2-min {position: relative; padding: 5% 10% 0 10%;width: 70%;}
-            .im-2-max {position: absolute; top: 7%; left: 15%; width: 70%; opacity: 0;}
-            .im-1-max:hover {opacity: 1; top: -20%; width: 170%; z-index: 99999;}
-            .im-2-max:hover {opacity: 1; width: 200%; top: -70%; z-index: 99999;}
-            .im-3 {width: 40%; float: left; padding: 5%}
-            .im-4 {width: 40%; float: right;padding: 5%}
-            .im-5-min {position: relative; padding: 12% 10% 0 10%;width: 70%;}
-            .im-5-max {position: absolute; top: 12%; left: 16%; opacity: 0; width: 65%;}
-            .im-5-max:hover {opacity: 1; width: 200%; top: -70%; z-index: 99999;}
-            .im-1-2 {padding-top:9%;width: 42%;}
-            .img-p {margin-left: 10px; margin-right: 10px; margin-bottom: 10px;
-                    font-size:1.4em;}
-            a {color: black; font-size: 1.4em}
+            p a {color: black; }
+            .im-3 {width: 139px; float: left; padding: 17px}
+            .im-4 {width: 139px; float: right;padding: 17px}
+            .interval-2 {width: 800px; height: 50px; }
+            .gr-photo-1-3 {width: 800px; height: 270px;}
+            .gr-ph-title {width: 800px; height: 30px; color:#FFE4B5; text-align: center;
+                          padding: 20px 0 0 0;}
+            .gr-ph-title span {background-color: rgba(16,39,30,0.4)}
+            .interval-1 {width: 800px; height: 50px; }
+            .footer-1 {width: 800px;}
+            .footer-1 a {color:#FFE4B5; padding-bottom: 30px}
+            .im-d-1 {padding-top:0;width: 150px; height: 202px; left: 190px;float: left;}
+            .im-d-3 {padding-top:0;width: 150px; height: 202px; left: 320px; float: left;}
+            .im-1-1 {padding-top:5%; ;width: 150px; }
+            .im-1:hover, .im-2:hover, .im-3:hover, .im-4:hover {-ms-transform: scale(2);
+                                                                -webkit-transform: scale(2); transform: scale(2); z-index: 9999; }
+            .img-pp {margin-bottom: 0px; width: 150px; color: black;text-align: center;}
             .d1 {background-color: RGBA(249, 201, 16, 0.8)}
             .d11 {font-size: 13px;}
             .d11-p {font-size: 15px;}
@@ -69,130 +56,118 @@
             .img-pp {text-align: center;  font-size:14px;}
             .im-6 {padding: 2% 10% 0 10%;width: 80%;}
             .im-7 {padding: 2% 25% 0 25%;width: 50%;}
-
-            @media only screen and (max-aspect-ratio: 7/4) {
-                div[class^="gr-art"] {font-size:13px;}
-                .gr-art-1 {padding: 1% 5%;}
-                .gr-art-2 {padding: 1% 5%;} 
-                .gr-art-5 {font-size:23px;}
-                .img-p {font-size:13px;}
-                a {color: black; font-size: 1em}
-            }
-            @media only screen and (max-width: 500px) {
-                .gr-art-5 {padding: 5% 1%;}
-                .interval-1 {height: 2px;}
-                .interval-2 {height: 2px;}
-                .sh-div {margin-top: 0px;
-                         grid-template-columns: 0% 0% 0% 0% repeat(12, 8.3%);}
-                </style> 
-            </head>
-            <body>
-                <div class="sh-div">
-                <div class="gr-photo-1">
-                    <div>
-                        <img class="im-1-min"  alt="" src="IMAGE/Emika-Sawicka.jpg">
-                        <img class="im-1-max"  alt="" src="IMAGE/MAX/Sawiccy-Krakow1931.jpg">
-                        <p class="img-p">Emilia Sawicka</p>
-                    </div>
-                    <div>
-                        <img class="im-2-min"  alt="" src="IMAGE/Stefka-Emilia-Kamila.jpg">
-                        <img class="im-2-max"  alt="" src="IMAGE/MAX/Stefka Emilia i Kamila.jpg">
-                        <p class="img-p">Emilia (pośrodku)<br> 
-                            z siostrą Stefanią i bratanicą Kamilą.</p>
-                    </div>
-                    <div>
-                        <img class="im-5-min"  alt="" src="IMAGE/Emilia-Kamila-MariaJanina.jpg">  
-                        <img class="im-5-max"  alt="" src="IMAGE/MAX/Siostry Sawickie Barska.jpg">  
-                        <p class="img-p">Emilia z siostrzenicami <br> 
-                            Kamilą (pośrodku) i Marią Janiną.
-                        </p>
-                    </div>
+        </style>
+    </head>
+    <body>
+    <center>
+        <div class="sh-div">
+            <div class="gr-photo-1">
+                <div>
+                    <img class="im-1-min"  alt="" src="IMAGE/Emika-Sawicka.jpg">
+                    <img class="im-1-max"  alt="" src="IMAGE/MAX/Sawiccy-Krakow1931.jpg">
+                    <p class="img-p">Emilia Sawicka</p>
                 </div>
-                <div class="gr-art-1">
-                    <p>Emilia Sawicka urodziła się 25.01.1881 roku w Bejscach. 
-                        Wyszła za mąż za Franciszka Pietraszewskiego. Data ślubu nie
-                        jest znana.</p>
-                    <p><img class="im-3"  alt="" src="IMAGE/Franciszek-Pietraszewski.jpg">  
-                        <img class="im-4"  alt="" src="IMAGE/Emika Sawicka.jpg">  
-                    </p>   <p> Franciszek urodził się 27 sierpnia 1876 roku,
-                        najprawdopodobniej we wsi Przemyków. Dzień później został 
-                        ochrzczony w kościele parafialnym w Koszycach. Jego 
-                        chrzestnymi zostali Józef Głowacz (z Przemykowa) i Zofia 
-                        Jakubówna.</p>
-                    <p> 1 stycznia 1893 roku przybył do Krakowa, by
-                        wyuczyć się piekarstwa. Pierwotnie Franciszek założył
-                        piekarnię przy ulicy Wiślnej. Dopiero w roku 1924 przeniósł 
-                        się na ulicę Grzegórzecką pod numer 12.</p>
-                    <p> Po ślubie 
-                        małżonkowie zamieszkali w kamienicy przy Grzegórzeckiej, 
-                        gdzie Franciszek rozwinął interes wspólnie z mężem siostry 
-                        swojej żony - Wojciechem Popiołkiem. Dzięki temu stał się, 
-                        wraz z żoną, współwłaścicielem piekarni przy ul. 
-                        Barskiej 13.</p> 
-                    <p> Emilia Pietraszewska zmarła 31.01.1959 roku w Krakowie, a 
-                        Franciszek 6.10.1953 roku, także w Krakowie.</p>
-                    <p> Niezwykle barwne losy rodziny Pietraszewskich </p>
-                    <a href="przyczynekdogenealogiirodziny.htm"> 
-                        spisane tutaj. </a>
+                <div>
+                    <img class="im-2-min"  alt="" src="IMAGE/Stefka-Emilia-Kamila.jpg">
+                    <img class="im-2-max"  alt="" src="IMAGE/MAX/Stefka Emilia i Kamila.jpg">
+                    <p class="img-p">Emilia (pośrodku)<br> 
+                        z siostrą Stefanią i bratanicą Kamilą.</p>
                 </div>
-                <div class="gr-art-5">
-                    <b> Emilia i Franciszek Pietraszewscy mieli czworo dzieci:</b>
-                </div>
-                <!--For 2 photos on the first line-->            
-                <div class="gr-photo-1-2">
-                    <a href="Maria-Janina.html">
-                        <img class="im-1-2" alt='' 
-                             src="IMAGE/Janina Pietraszewska ramka.jpg"></a>
-                    <p><a href="Maria-Sawicka.html">Maria Janina</a></p>
-                </div>
-                <div class="gr-photo-2-2"> 
-                    <a href="Halina-Pietraszewska.html">
-                        <img class="im-1-2" alt='' 
-                             src="IMAGE/Halina-Pietraszewska.jpg"></a>
-                    <p><a href="Maria-Sawicka.html">Halina</a></p>
-                </div>
-                <!--For 2 photos on second line-->            
-                <div class="gr-photo-3-4">
-                    <a href="#info-1">
-                        <img class="im-1-2" alt='' 
-                             src="IMAGE/Adam Pietraszewski ramka.jpg"></a>
-                    <p><a href="#info-1">Adam</a></p>
-                </div>
-                <div class="gr-photo-4-4">
-                    <a href="#info-2">
-                        <img class="im-1-2" alt='' 
-                             src="IMAGE/Antoni Pietraszewski ramka.jpg"></a>
-                    <p><a href="#info-2">Antoni</a></p>
-                </div>
-                <div class="interval-1"></div>
-                <div class="interval-2"></div>
-                <div class="footer-1">
-                    <a href="Sawiccy-z-Bejsc.html">Wróć do poprzedniej strony</a>
+                <div>
+                    <img class="im-5-min"  alt="" src="IMAGE/Emilia-Kamila-MariaJanina.jpg">  
+                    <img class="im-5-max"  alt="" src="IMAGE/MAX/Siostry Sawickie Barska.jpg">  
+                    <p class="img-p">Emilia z siostrzenicami <br> 
+                        Kamilą (pośrodku) i Marią Janiną.
+                    </p>
                 </div>
             </div>
-            <div id="info-1" class="modalDialog d1">
-                <div class="d11"><a href="#close" title="" class="close">X</a>
-                    <h2>Adam Pietraszewski</h2>	
-                    <img alt="" class="im-6"  src="IMAGE/Adam-Pietraszewski-z-zona.jpg">
-                    <p class="img-pp">Adam Pietraszewski z żoną.</p>
-                    <p class="d11-p">Maria Janina Pietraszewska wyszła za mąż za Gustawa 
-                        Czecha. Był on pracownikiem bankowym. Młodzi 
-                        zamieszkali początkowo w mało komfortowym mieszkaniu
-                        przy ul. Garbarskiej 16.<br>
-                        Wkrótce Gustaw otrzymał od banku mieszkanie służbowe 
-                        przy ul. Tomasza.</p>
-                </div></div>
-            <div id="info-2" class="modalDialog d1">
-                <div class="d11"><a href="#close" title="" class="close">X</a>
-                    <h2>Antoni Pietraszewski</h2>	
-                    <img alt="" class="im-7"  src="IMAGE/Antoni Pietraszewski.jpg">
-                    <p class="img-pp">Antoni Pietraszewski</p>
-                    <p class="d11-p">Maria Janina Pietraszewska wyszła za mąż za Gustawa 
-                        Czecha. Był on pracownikiem bankowym. Młodzi 
-                        zamieszkali początkowo w mało komfortowym mieszkaniu
-                        przy ul. Garbarskiej 16.<br>
-                        Wkrótce Gustaw otrzymał od banku mieszkanie służbowe 
-                        przy ul. Tomasza.</p>
-                </div></div>
-        </body>
-    </html>
+            <div class="gr-art-1">
+                <p>Emilia Sawicka urodziła się 25.01.1881 roku w Bejscach. 
+                    Wyszła za mąż za Franciszka Pietraszewskiego. Data ślubu nie
+                    jest znana.</p>
+                <p><img class="im-3"  alt="" src="IMAGE/Franciszek-Pietraszewski.jpg">  
+                    <img class="im-4"  alt="" src="IMAGE/Emika Sawicka.jpg">  
+                </p>   <p> Franciszek urodził się 27 sierpnia 1876 roku,
+                    najprawdopodobniej we wsi Przemyków. Dzień później został 
+                    ochrzczony w kościele parafialnym w Koszycach. Jego 
+                    chrzestnymi zostali Józef Głowacz (z Przemykowa) i Zofia 
+                    Jakubówna.</p>
+                <p> 1 stycznia 1893 roku przybył do Krakowa, by
+                    wyuczyć się piekarstwa. Pierwotnie Franciszek założył
+                    piekarnię przy ulicy Wiślnej. Dopiero w roku 1924 przeniósł 
+                    się na ulicę Grzegórzecką pod numer 12.</p>
+                <p> Po ślubie 
+                    małżonkowie zamieszkali w kamienicy przy Grzegórzeckiej, 
+                    gdzie Franciszek rozwinął interes wspólnie z mężem siostry 
+                    swojej żony - Wojciechem Popiołkiem. Dzięki temu stał się, 
+                    wraz z żoną, współwłaścicielem piekarni przy ul. 
+                    Barskiej 13.</p> 
+                <p> Emilia Pietraszewska zmarła 31.01.1959 roku w Krakowie, a 
+                    Franciszek 6.10.1953 roku, także w Krakowie.</p>
+                <p> Niezwykle barwne losy rodziny Pietraszewskich 
+                    <a href="przyczynek-do-genealogii-rodziny.html"> 
+                        spisane tutaj. </a></p>
+            </div>   
+        </div>           
+        <div class="interval-2"></div>
+        <div class="gr-ph-title"><span>Emilia i Franciszek Pietraszewscy mieli
+                czworo dzieci:
+            </span>
+        </div>
+        <div class="gr-photo-1-3">  
+            <div class="im-d-1"> 
+                <a href="Maria-Janina.html"> 
+                    <img class="im-1-1" alt='' src="IMAGE/Janina Pietraszewska ramka.jpg">
+                    <p class="img-pp">Maria Janina</p></a>
+            </div>
+            <div class="im-d-3">
+                <a href="Halina-Pietraszewska.html">
+                    <img class="im-1-1" src="IMAGE/Halina-Pietraszewska.jpg">
+                    <p class="img-pp">Halina</p></a>
+            </div>
+        </div>              
+        <div class="gr-photo-1-3">  
+            <div class="im-d-1"> 
+                <a href="#info-1"> 
+                    <img class="im-1-1" alt='' src="IMAGE/Adam Pietraszewski ramka.jpg">
+                    <p class="img-pp">Adam</p></a>
+            </div>
+            <div class="im-d-3">
+                <a href="#info-2">
+                    <img class="im-1-1" src="IMAGE/Antoni Pietraszewski ramka.jpg">
+                    <p class="img-pp">Antoni</p></a>
+            </div>
+        </div>              
+        <div class="interval-1"></div>
+        <div class="footer-1">
+            <a href="Sawiccy-z-Bejsc.html"> Wróć do poprzedniej strony</a>
+        </div>
+        <div id="info-1" class="modalDialog d1">
+            <div class="d11"><a href="#close" title="" class="close">X</a>
+                <h2>Adam Pietraszewski</h2>	
+                <img alt="" class="im-6"  src="IMAGE/Adam-Pietraszewski-z-zona.jpg">
+                <p class="img-pp">Adam Pietraszewski z żoną.</p>
+                <p class="d11-p">Maria Janina Pietraszewska wyszła za mąż za Gustawa 
+                    Czecha. Był on pracownikiem bankowym. Młodzi 
+                    zamieszkali początkowo w mało komfortowym mieszkaniu
+                    przy ul. Garbarskiej 16.<br>
+                    Wkrótce Gustaw otrzymał od banku mieszkanie służbowe 
+                    przy ul. Tomasza.</p>
+            </div>
+        </div>
+        <div id="info-2" class="modalDialog d1">
+            <div class="d11"><a href="#close" title="" class="close">X</a>
+                <h2>Antoni Pietraszewski</h2>	
+                <img alt="" class="im-7"  src="IMAGE/Antoni Pietraszewski.jpg">
+                <p class="img-pp">Antoni Pietraszewski</p>
+                <p class="d11-p">Maria Janina Pietraszewska wyszła za mąż za Gustawa 
+                    Czecha. Był on pracownikiem bankowym. Młodzi 
+                    zamieszkali początkowo w mało komfortowym mieszkaniu
+                    przy ul. Garbarskiej 16.<br>
+                    Wkrótce Gustaw otrzymał od banku mieszkanie służbowe 
+                    przy ul. Tomasza.</p>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
