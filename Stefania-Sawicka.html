@@ -20,9 +20,11 @@
                     text-align: center;}
             .im-1-min {position: relative; padding: 40px 15px 0 15px; 
                        width: 180px; }
-            .im-1 {padding: 30px 45px 0 45px; width: 210px;}
+            .im-1 {padding: 30px 45px 0 45px; width: 210px; transition: transform .2s;}
             .im-4-min {position: relative; padding-top: 15px; width: 180px; }
-            .im-2 {padding: 30px 30px 0 30px; width: 240px;}
+            .im-2 {padding: 30px 30px 0 30px; width: 240px; transition: transform .2s;}
+            .im-1:hover, .im-2:hover {-ms-transform: scale(2);
+                -webkit-transform: scale(2); transform: scale(2); z-index: 9999; }
             .gr-art-1 {width: 500px; height: 1660px; float: right;
                        color:black;  position: static;
                        background: url('IMAGE/tlo011.jpg');  
