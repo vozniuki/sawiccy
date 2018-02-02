@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Language" content="pl">
-        <meta name="generator" content="Bluefish 2.2.9" >
-        <meta name="ProgId" content="FrontPage.Editor.Document">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
-        <title>Maria-Janina-Pietraszewska</title>
-<link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
-        <link rel="stylesheet" href="short-tree-0.css">
-        <base target="_self">
+        <title>Emika Sawicka</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">        
+        <link rel="stylesheet" href="zwm/Modal-Dialog.css" type="text/css"/>
         <style>
-            * {font-family: 'Kurale', serif; margin: 0; position: relative;}
-            body { margin: 0; background: url('IMAGE/tlotapeta.jpg');
-            }
+            * {font-family: 'Kurale', serif; margin: 0; padding: 0;
+               position: relative; font-size:17px;}
+            body { margin: 0; background: url('IMAGE/tlotapeta.jpg');  }
             a:hover {color: brown;}
-            .sh-div {width: 100%;display:grid; margin-left: 0% ;
-                     grid-template-columns: repeat(20, 5%);
-                     grid-template-rows: repeat(8, auto);margin-top: 53px;
-                     }
-            .gr-photo-1 {grid-area: 1/5/4/10 ; position: static;}
-            .gr-art-1 {grid-area: 1/10/2/17 ; padding: 1% 5%;}
-            .gr-art-1 p {margin-top: 10px;}
-            .gr-art-1 a {color: black;}
-            div[class^="gr-art"] { color:black; font-size:17px;
+            .sh-div {width: 800px;height: 850px; margin-top: 43px;}
+            .gr-photo-1 {width: 350px; height: 870px; float: left;}
+            div[class^="gr-photo"] {background: url('IMAGE/tlo01.jpg'); border: 0;}
+            .im-1-min {position: relative; padding: 35px 52px 0 52px; width: 180px;}
+            .im-1-max {position: absolute; top: 12%; left: 25%; width: 30%; opacity: 0;}
+            .im-2-min {position: relative; padding: 17px 35px 0 35px; width: 180px;}
+            .im-2-max {position: absolute; top: 7%; left: 15%; width: 50%; opacity: 0;}
+            .im-1-max:hover {opacity: 1; top: -20px; width: 300px; z-index: 99999;}
+            .im-2-max:hover {opacity: 1; width: 300px; top: -70px; z-index: 99999;}
+            .im-5-min {position: relative; padding: 42px 35px 0 95px; width: 250px;}
+            .im-5-max {position: absolute; top: 12px; left: 16px; opacity: 0; width: 200px;}
+            .im-5-max:hover {opacity: 1; width: 300px; top: -70px; z-index: 99999;}
+            .img-p {margin-left: 15px; margin-right: 10px; margin-bottom: 10px;
+            }
+            .gr-art-1 {width: 450px; height: 845px; float: right; 
+                       padding: 25px 0px 0px 0px;}
+            .gr-art-1 p {margin-top: 10px; padding-left: 57px; padding-right: 45px; 
+                         text-align: left; }
+            div[class^="gr-art"] { color:#000000; 
                                    background: url('IMAGE/tlo011.jpg');
                                    text-align: left;}	   
-            div[class^="gr-photo"] {padding-bottom: 5%;
-                                    background: url('IMAGE/tlo01.jpg');
-                                    border: 0;color: black; size:3px; text-align: center;}
-            .im-1-min {position: relative; padding: 10% 5% 0 5%;width: 60%; }
-            .im-1-max {position: absolute; top: 19%; left: 20%;  width: 60%; opacity: 0;}
-            .im-3-max {position: absolute; top: 19%; left: 20%;  width: 60%; opacity: 0;}
-            .im-1-max:hover {opacity: 1; top: -20%; width: 300%; z-index: 99999;}
-            .im-3-max:hover {opacity: 1; width: 150%; top: -50%; z-index: 99999;}
-            .im-3-min {position: relative; padding-top: 5%; padding-left: 20%;width: 60%;}
-            .im-2-min {position: relative; padding-top: 5%; padding-left: 3%;width: 60%;}
-            .img-p { margin-bottom: 20px;
-                     font-size:14px; text-align: center;}
-            p a {color: black;}
-            @media only screen and (max-aspect-ratio: 7/4) {
-                div[class^="gr-art"] {font-size:13px;}
-                .gr-art-1 {padding: 1% 5%;}
-            }
-            @media only screen and (max-width: 500px) {
-                .sh-div {margin-top: 0px;
-                         grid-template-columns: 0% 0% 0% 0% repeat(12, 8.3%);}
-                </style> 
-            </head>
-            <body>
-                <div class="sh-div">
+            a {color: #000000; }
+            .im-3 {width: 139px; float: left; padding: 17px}
+            .im-4 {width: 139px; float: right;padding: 17px}
+            .interval-2 {width: 800px; height: 50px; }
+            .gr-photo-1-3 {width: 800px; height: 270px;}
+            .gr-ph-title {width: 800px; height: 140px; color:#000000; text-align: center;
+                          padding: 30px 0 0 0;background: url('IMAGE/tlo01.jpg');
+            font-weight: bold; font-size: 9px;}
+            .interval-1 {width: 800px; height: 50px; }
+            .footer-1 {width: 800px;}
+            .footer-1 a {color:#FFE4B5; padding-bottom: 30px}
+            .im-d-1 {padding-top:0;width: 150px; height: 202px; left: 190px;float: left;}
+            .im-d-3 {padding-top:0;width: 150px; height: 202px; left: 320px; float: left;}
+            .im-1-1 {padding-top:5%; ;width: 150px; }
+            .im-1:hover, .im-2:hover, .im-3:hover, .im-4:hover {-ms-transform: scale(2);
+                                                                -webkit-transform: scale(2); transform: scale(2); z-index: 9999; }
+            .img-ppp {text-align: center; font-size:13px; margin-bottom: 0px;
+                    width: 250px; color: #000000;}
+            .d1 {background-color: rgba(221, 205, 239, 0.8)}
+            .d11 {font-size: 13px;}
+            .modalDialog > div { background: url('IMAGE/tlo011.jpg'); width: 450px;}
+            .d11-p {font-size: 13px; text-align: justify;}
+            h2 {text-align: center;}
+            .img-pp {text-align: center; font-size:14px; margin-bottom: 0px;
+                    width: 150px; color: #000000;}
+            .im-6 {padding: 2% 10% 0 10%;width: 80%;}
+            .im-7 {padding: 14px 50px 0 50px; width: 280px;}
+        </style>
+    </head>
+    <body>
+    <center>
+       <div class="sh-div">
                 <div class="gr-photo-1">
                     <div>    
                         <img class="im-1-min"  alt="" src="IMAGE/Janina Pietraszewska ramka2.jpg">
                         <img class="im-1-max"  alt="" src="IMAGE/MAX/Slub Krystyny Sawickiej.jpg">
-                        <p class="img-p">Janina i Gustaw Czech</p>
+                        <p class="img-p">Janina i Gustaw Czechowie</p>
                     </div>
                     <div>
                         <img class="im-1-min"  alt="" src="IMAGE/Gustaw-Czech.jpg">
@@ -61,21 +76,21 @@
                         <p class="img-p">Gustaw Czech</p>
                     </div>
                     <div>
-                        <img class="im-2-min"  alt="" src="IMAGE/Jan-Czech.jpg">
+                        <img class="im-1-min"  alt="" src="IMAGE/Jan-Czech.jpg">
                         <p class="img-p">Jan Czech</p>
                     </div>
                 </div>
-                <div class="gr-art-1">
-                    <p><br>Maria Janina Pietraszewska wyszła za mąż za Gustawa 
+            <div class="gr-art-1">
+                <p>Maria Janina urodziła się w 1908 roku w Krakowie. 8 lutego 1942 roku poślubiła Gustawa Czecha, lat 40, syna Grzegorza i Wiktorii z Kulkowskich. . wyszła za mąż za Gustawa 
                         Czecha. Był on pracownikiem bankowym. Młodzi zamieszkali 
                         początkowo w mało komfortowym mieszkaniu przy 
                         ul. Garbarskiej 16. Wkrótce Gustaw otrzymał od banku 
-                        mieszkanie służbowe przy ul. Tomasza.</p>
-                    <p> Czechowie mieli dwoje dzieci: Ewę i Jana.</p>
-                    <div>
-                        <img class="im-3-min"  alt="" src="IMAGE/Ewa-Czech.jpg">
-                        <img class="im-3-max"  alt="" src="IMAGE/MAX/EwaCz-Ha-Ka-Fe.jpg">
-                        <p class="img-p">Ewa Czechówna</p>
+                        mieszkanie służbowe przy ul. Tomasza.</p><p>Maria Janina zmarła 3 marca 1972 roku w Krakowie..</p>
+						 <p> Czechowie mieli dwoje dzieci: Ewę i Jana.</p>
+              <div>
+                        <img class="im-5-min"  alt="" src="IMAGE/Ewa-Czech.jpg">
+                        <img class="im-5-max"  alt="" src="IMAGE/MAX/EwaCz-Ha-Ka-Fe.jpg"> <p>Ewa Czechówna</p>
+                       
                     </div>
                     <p>Ewa urodziła się w 1945 roku. W 1971 wyszła za mąż za
                         lekarza Witolda Czechowicza. Nie mieli dzieci.
