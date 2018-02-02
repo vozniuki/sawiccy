@@ -10,8 +10,11 @@
             body { margin: 0; background: url('IMAGE/tlost.jpg');  }
             .sh-div {width: 800px;height: 2850px; margin-top: 43px;}
             .gr-photo-1 {width: 300px; height: 2850px; float: left;}
-            .im-1 {padding: 0% 0% 0 0%;width: 285px; padding: 20px 5px;}
-            .im-2 {padding: 0% 0 0 0%;width: 165px; padding: 20px 5px;}
+            .im-1 {width: 285px; padding: 20px 5px;}
+            .im-3 {width: 285px; padding: 20px 5px; transition: transform .2s;}
+            .im-2 {width: 165px; padding: 20px 5px;}
+            .im-3:hover {-ms-transform: scale(2); -webkit-transform: scale(2); 
+                   transform: scale(2); z-index: 9999; }
             .img-p {margin-left: 22px; margin-right: 10px;  margin-bottom: 10px;
                     font-size:15px; color: #FFE4B5;text-align: left;}
             .gr-art-1 {width: 450px; height: 2830px; color:#FFFACD; float: right;
@@ -35,141 +38,155 @@
             .im-d-2 {padding-top:0%;width: 120px; height: 180px; left: 210px;float: left;}
             .im-d-3 {padding-top:0%;width: 120px; height: 180px; left: 320px; float: left;}
             .im-1-1 {padding-top:5%; ;width: 150px; }
-            .img-pp {margin-bottom: 0px; font-size:15px; color: #FFE4B5;text-align: center;}
+            .img-pp {margin-bottom: 0px; font-size:15px; color: #FFE4B5;
+                     text-align: center;}
+            .im-1-min {position: relative; width: 285px; padding: 20px 5px;}
+            .im-1-max {position: absolute; top: 25px; width: 285px; height: 500px; opacity: 0;}
+            .im-1-1-max {position: absolute; top: 0; left: 100px; height: 500px; }
+            .im-1-2-max {position: absolute; top: 0; left: -170px; height: 500px; 
+                        }
+            .im-1-max:hover {opacity: 1; z-index: 99999;}
+
         </style>
     </head>
     <body>
     <center>
         <div class="sh-div">
-                <div class="gr-photo-1">
-                    <img class="im-1"  alt="" src="IMAGE/Stanislaw-Sawicki1918.jpg">
-                    <img class="im-1"  alt="" src="IMAGE/Stanislaw-Sawicki1920.jpg">
-                    <img class="im-2"  alt="" src="IMAGE/rewers01.jpg">
-                    <img class="im-2"  alt="" src="IMAGE/rewers02.jpg">
-                    <img class="im-1"  alt="" src="IMAGE/Adam-Kamila-Anna.jpg">
-                    <p class="img-p">Od lewej stoją: Adam, Kamila, Anna. Bejsce, 
-                        przed 1933 rokiem.</p>
-                    <p><img class="im-1" 
-                            alt="" src="IMAGE/Adam-Kamila-Anna-Stanislaw.jpg"></p>
-                    <p class=img-p> Stoją (od lewej): Adam, Kamila. Siedzą 
-                        (od lewej): Hanna, żona Stanisława, tu już Nizołkowa.
-                        Obok niej wierna wieloletnia służąca Rozalka. Ponieżej 
-                        (od lewej):mały Staś, syn Hanny i Stanisława Niziołka,
-                        oraz Anna Sawicka.</p>
-
+            <div class="gr-photo-1">
+                <img class="im-1"  alt="" src="IMAGE/Stanislaw-Sawicki1918.jpg">
+                <div>
+                    <img class="im-1-min"  alt="" src="IMAGE/Stanislaw-Sawicki1920.jpg">
+                    <div class="im-1-max">
+                        <img class="im-1-1-max"  alt="" src="IMAGE/MAX/rewers01.jpg">
+                        <img class="im-1-2-max"  alt="" src="IMAGE/MAX/rewers02.jpg">
+                    </div>
                 </div>
-                <div class="gr-art-1">
-                    <p><b>Stanisław Sawicki </b>urodził się w 1887 roku w Bejscach. Od 
-                        dziecka przejawiał niezwykłą przedsiębiorczość. Jako
-                        młodzieniec wyjechał na kilka lat na Litwę, a spory zarobek 
-                        zdeponował w złotych rublach w banku na hasło "Kamila". Było
-                        to jego ulubione imię i nadał je potem swej pierwszej córce.
-                        Niestety, zgromadzone oszczędności przepadły w niejasnych 
-                        okolicznościach. Nie wiadomo dziś, czy Stanisław wrócił z 
-                        nimi do Bejsc, czy pozostały na Litwie. Zresztą, cała 
-                        historia z wyjazdem i złotymi rublami znana jest wyłącznie 
-                        z opowieści rodzinnych i nie zachował się żaden dokument
-                        potwierdzający tę eskapadę.</p> 
-                    <p> Stanisław był człowiekiem wyjątkowym, a współcześni mu 
-                        opisywali go jako postać niezwykle barwną. Miał rozliczne zainteresowania, ale też 
-                        obowiązki w większości związane z administrowaniem 
-                        gospodarstwem. Interesował się nowinkami technicznymi, 
-                        uprawił też wiele egzotycznych ówcześnie warzyw, miał ule, 
-                        kochał dobrą kuchnię i słynął z wyrobu nadzwyczajnych 
-                        nalewek, a na dodatek prowadził założoną w swoim 
-                        gospodarstwie cegielnię.</p>
-                    <p>Odznaczał się niezwykłą elegancją, zawsze starannie
-                        ubrany, zasiadał do porannej kawy przeglądając gazety; 
-                        kawa musiała być najprzedniejszego gatunku i w 
-                        wykwintnej porcelanowej filiżance ze złotą obwódką.</p>
-                    <p>Stanisław był jak na owe czasy światowcem. Sporo
-                        podróżował, łatwo nawiązywał kontakty i prowadził 
-                        rozliczne interesy, co nie przeszkadzało mu rozwijać 
-                        gospodarstwo, jakie po śmierci ojca, w 1894 roku, mogło 
-                        podupaść bez jego troski i zapobiegliwości. Miał wszakże
-                        pod opieką owdowałą matkę i jej brata Władysława.</p> 
-                    <p>Starsze siostry - Maria i Emilia - wydały się za piekarzy i
-                        przeprowadziły do Krakowa. Brat Antoni podjął pracę w 
-                        gorzelni. Stanisław został w bejskim majątku sam.</p>
-                    <p>19.02.1922 roku Stanisław poślubił Annę Zuwałównę, urodzoną 
-                        w Kobieli. Panna młoda miała wówczas niecałe 17 lat i - 
-                        jak opowiadała swym wnuczkom - nie była jeszcze do końca 
-                        kobietą.</p> 
-                    <p>Młodzi zamieszkali  w niedawno zbudowanym przez rodziców
-                        Stanisława drewnianym domu. Stanisław wyposażył go przed 
-                        ślubem we wszystkie dostępne wówczas udogodnienia, by młoda
-                        żona od razu miała doskonałe warunki do życia i 
-                        gospodarowania. </p> 
-                    <p>W bejskim gospodarstwie Sawickich zjawiła się też służba, 
-                        toteż młoda żona nie musiała ciężko pracować. Z pasją 
-                        zajmowała się prowadzeniem otwartego domu, kierowaniem
-                        pracownikami i rodzeniem dzieci. Sawiccy byli weseli,
-                        towarzyscy i rodzinni, toteż do majątku często przyjeżdżali
-                        goście. W sąsiednich wsiach i miasteczkach mieszkali dalsi 
-                        i bliżsi krewni, a dom Sawickich zawsze był dla nich 
-                        otwarty. Słynna była też bejska kuchnia. Stanisław był
-                        wytrawnym kucharzem, a jego żona Anna nie pozostawała w 
-                        tyle.</p>
-                    <p>Stanisław swoje pasje usiłował przekazać starszym dzieciom -
-                        córce Kamili i synowi Adamowi. Niestety, żadne z nich nie 
-                        odziedziczyło tych skłonności; Kamila nie znosiła pracy w 
-                        ziemi, nie zrobiła też w życiu ani jednej nalewki. Syn 
-                        Adam zmuszony był do pozostania na gospodarswie, ale nie da
-                        się ukryć, że praca na roli nie dawała mu szczęścia. 
-                        Podobnie jak najmłodsza córka Anna. I ona przez całe 
-                        dorosłe życie zajmowała się wiejskim gospodarstwem, ale
-                        wobec ogromu pracy można przypuszczać, że wolałaby zajmować
-                        się czymś innym, nie miała bowiem cech chłopki.  </p> 
-                    <p>Osobą, jaka odziedziczyła w genach większość fascynacji
-                        Stanisława, jest jego wnuczka Zdzisława. Choć urodziła się 
-                        22 lata po jego śmierci, to ona właśnie wytwarza  domowe 
-                        nalewki, a także z zapałem zajmuje się obszernym ogrodem. 
-                        <br> <br> To wspaniałe życie rodzinne przerwała nagła i nieuleczalna 
-                        choroba Stanisława. Zmarł "na płuca" 22 lutego 1933 roku. 
-                        Zostawił młodą żonę Hannę, córeczki Kamilę i Annę oraz syna
-                        Adama. Wdowa miała niespełna 30 lat, dzieci były małe, a 
-                        gospodarstwo rozbudowane. Z pomocą przyszły siostry 
-                        Stanisława - Maria, Emilia i Stefania - dobrze już w
-                        Krakowie urządzone i niebiedne. Zaproponowały, że zabiorą 
-                        do siebie syna Adama, nauczą go fachu piekarskiego i
-                        prowadzenia sklepu. Miał terminować u Marii Popiołkowej w
-                        sklepie przy ulicy Barskiej 13. Dla młodego chłopaka
-                        mieszanie mąki, liczenie dziennego utargu i wystawianie 
-                        pudełek na półki nie było wymarzonym zajęciem, obijał się
-                        więc i buntował, bo w gruncie rzeczy tęsknił za wiejskim 
-                        życiem, do jakiego zdołał się już przyzwyczaić, i jakie aż 
-                        do śmierci było dlań naturalne i bliskie. Krewne co rychlej
-                        odprawiły niesfornego bratanka do Bejsc, by pomagał w 
-                        gospodarstwie matce, a na pomocnicę upatrzyły sobie 
-                        piętnastoletnią Kamilę.<br><br> Czasy były trudne, zbliżała się 
-                        wojna, młodej wdowie z trójką dzieci coraz trudniej było
-                        radzić sobie z bejskim gospodarstwem. Co prawda Kamila była
-                        już u ciotek w Krakowie, ale pozostała dwójka też wymagała
-                        troski. Potrzebny był nowy gospodarz.</p>
-                    <p>Ładna, pracowita i młoda jeszcze wdowa wpadła w oko 
-                        przystojnemu kawalerowi z pobliskich Ksan. Stanisław 
-                        Niziołek był postawny, męski i zapewne dysponował też innymi
-                        cennymi walorami, bo Hanna Sawicka wyszła za niego za mąż. 
-                        Z drugiej strony nie mogła zbytnio wybrzydzać, bo wolnych
-                        panien bez zobowiązań było wtedy po wsiach na pęczki. Jej 
-                        niewątpliwym atutem było zadbane, solidne gospodarstwo, 
-                        zgromadzone dobra (porcelana, srebrna zastawa, kupony
-                        materiału, złote monety i temu podobne), tylko dwójka dzieci 
-                        na garnuszku i urok osobisty. Hanna Sawicka była bowiem
-                        kobietą różniącą się od wiejskich panien elegancją, wiedzą 
-                        i kulturą. Dbająca o dom, zdolna ogrodniczka, oczytana i 
-                        orientująca się we współczesnym świecie, miała z pewnością i
-                        inne zalety, jakie przywiodły Stanisława do Bejsc.</p>
-                    <p>Gospodarowali tam do początku lat 50. Wtedy to, uwiedzeni
-                        perspektywą lepszego bytu, przeprowadzili się z najmłodszą 
-                        córką Anną (ze związku z Sawickim) oraz małym wspólnym 
-                        synkiem Stasiem na Ziemie Odzyskane, do wsi Kopań położonej
-                        opodal Darłowa, a następnie przeprowadzili się do Czaplinka,
-                        gdzie oboje mieszkali do końca życia.</p>
-                    <p><br>W Bejscach został Adam. Aż do śmierci prowadził tam 
-                        gospodarstwo. </p> 
+                <img class="im-2"  alt="" src="IMAGE/MAX/rewers01.jpg">
+                <img class="im-2"  alt="" src="IMAGE/MAX/rewers02.jpg">
+                <img class="im-3"  alt="" src="IMAGE/Adam-Kamila-Anna.jpg">
+                <p class="img-p">Od lewej stoją: Adam, Kamila, Anna. Bejsce, 
+                    przed 1933 rokiem.</p>
+                <p><img class="im-3" 
+                        alt="" src="IMAGE/Adam-Kamila-Anna-Stanislaw.jpg"></p>
+                <p class=img-p> Stoją (od lewej): Adam, Kamila. Siedzą 
+                    (od lewej): Hanna, żona Stanisława, tu już Nizołkowa.
+                    Obok niej wierna wieloletnia służąca Rozalka. Ponieżej 
+                    (od lewej):mały Staś, syn Hanny i Stanisława Niziołka,
+                    oraz Anna Sawicka.</p>
 
-                </div>
+            </div>
+            <div class="gr-art-1">
+                <p><b>Stanisław Sawicki </b>urodził się w 1887 roku w Bejscach. Od 
+                    dziecka przejawiał niezwykłą przedsiębiorczość. Jako
+                    młodzieniec wyjechał na kilka lat na Litwę, a spory zarobek 
+                    zdeponował w złotych rublach w banku na hasło "Kamila". Było
+                    to jego ulubione imię i nadał je potem swej pierwszej córce.
+                    Niestety, zgromadzone oszczędności przepadły w niejasnych 
+                    okolicznościach. Nie wiadomo dziś, czy Stanisław wrócił z 
+                    nimi do Bejsc, czy pozostały na Litwie. Zresztą, cała 
+                    historia z wyjazdem i złotymi rublami znana jest wyłącznie 
+                    z opowieści rodzinnych i nie zachował się żaden dokument
+                    potwierdzający tę eskapadę.</p> 
+                <p> Stanisław był człowiekiem wyjątkowym, a współcześni mu 
+                    opisywali go jako postać niezwykle barwną. Miał rozliczne zainteresowania, ale też 
+                    obowiązki w większości związane z administrowaniem 
+                    gospodarstwem. Interesował się nowinkami technicznymi, 
+                    uprawił też wiele egzotycznych ówcześnie warzyw, miał ule, 
+                    kochał dobrą kuchnię i słynął z wyrobu nadzwyczajnych 
+                    nalewek, a na dodatek prowadził założoną w swoim 
+                    gospodarstwie cegielnię.</p>
+                <p>Odznaczał się niezwykłą elegancją, zawsze starannie
+                    ubrany, zasiadał do porannej kawy przeglądając gazety; 
+                    kawa musiała być najprzedniejszego gatunku i w 
+                    wykwintnej porcelanowej filiżance ze złotą obwódką.</p>
+                <p>Stanisław był jak na owe czasy światowcem. Sporo
+                    podróżował, łatwo nawiązywał kontakty i prowadził 
+                    rozliczne interesy, co nie przeszkadzało mu rozwijać 
+                    gospodarstwo, jakie po śmierci ojca, w 1894 roku, mogło 
+                    podupaść bez jego troski i zapobiegliwości. Miał wszakże
+                    pod opieką owdowałą matkę i jej brata Władysława.</p> 
+                <p>Starsze siostry - Maria i Emilia - wydały się za piekarzy i
+                    przeprowadziły do Krakowa. Brat Antoni podjął pracę w 
+                    gorzelni. Stanisław został w bejskim majątku sam.</p>
+                <p>19.02.1922 roku Stanisław poślubił Annę Zuwałównę, urodzoną 
+                    w Kobieli. Panna młoda miała wówczas niecałe 17 lat i - 
+                    jak opowiadała swym wnuczkom - nie była jeszcze do końca 
+                    kobietą.</p> 
+                <p>Młodzi zamieszkali  w niedawno zbudowanym przez rodziców
+                    Stanisława drewnianym domu. Stanisław wyposażył go przed 
+                    ślubem we wszystkie dostępne wówczas udogodnienia, by młoda
+                    żona od razu miała doskonałe warunki do życia i 
+                    gospodarowania. </p> 
+                <p>W bejskim gospodarstwie Sawickich zjawiła się też służba, 
+                    toteż młoda żona nie musiała ciężko pracować. Z pasją 
+                    zajmowała się prowadzeniem otwartego domu, kierowaniem
+                    pracownikami i rodzeniem dzieci. Sawiccy byli weseli,
+                    towarzyscy i rodzinni, toteż do majątku często przyjeżdżali
+                    goście. W sąsiednich wsiach i miasteczkach mieszkali dalsi 
+                    i bliżsi krewni, a dom Sawickich zawsze był dla nich 
+                    otwarty. Słynna była też bejska kuchnia. Stanisław był
+                    wytrawnym kucharzem, a jego żona Anna nie pozostawała w 
+                    tyle.</p>
+                <p>Stanisław swoje pasje usiłował przekazać starszym dzieciom -
+                    córce Kamili i synowi Adamowi. Niestety, żadne z nich nie 
+                    odziedziczyło tych skłonności; Kamila nie znosiła pracy w 
+                    ziemi, nie zrobiła też w życiu ani jednej nalewki. Syn 
+                    Adam zmuszony był do pozostania na gospodarswie, ale nie da
+                    się ukryć, że praca na roli nie dawała mu szczęścia. 
+                    Podobnie jak najmłodsza córka Anna. I ona przez całe 
+                    dorosłe życie zajmowała się wiejskim gospodarstwem, ale
+                    wobec ogromu pracy można przypuszczać, że wolałaby zajmować
+                    się czymś innym, nie miała bowiem cech chłopki.  </p> 
+                <p>Osobą, jaka odziedziczyła w genach większość fascynacji
+                    Stanisława, jest jego wnuczka Zdzisława. Choć urodziła się 
+                    22 lata po jego śmierci, to ona właśnie wytwarza  domowe 
+                    nalewki, a także z zapałem zajmuje się obszernym ogrodem. 
+                    <br> <br> To wspaniałe życie rodzinne przerwała nagła i nieuleczalna 
+                    choroba Stanisława. Zmarł "na płuca" 22 lutego 1933 roku. 
+                    Zostawił młodą żonę Hannę, córeczki Kamilę i Annę oraz syna
+                    Adama. Wdowa miała niespełna 30 lat, dzieci były małe, a 
+                    gospodarstwo rozbudowane. Z pomocą przyszły siostry 
+                    Stanisława - Maria, Emilia i Stefania - dobrze już w
+                    Krakowie urządzone i niebiedne. Zaproponowały, że zabiorą 
+                    do siebie syna Adama, nauczą go fachu piekarskiego i
+                    prowadzenia sklepu. Miał terminować u Marii Popiołkowej w
+                    sklepie przy ulicy Barskiej 13. Dla młodego chłopaka
+                    mieszanie mąki, liczenie dziennego utargu i wystawianie 
+                    pudełek na półki nie było wymarzonym zajęciem, obijał się
+                    więc i buntował, bo w gruncie rzeczy tęsknił za wiejskim 
+                    życiem, do jakiego zdołał się już przyzwyczaić, i jakie aż 
+                    do śmierci było dlań naturalne i bliskie. Krewne co rychlej
+                    odprawiły niesfornego bratanka do Bejsc, by pomagał w 
+                    gospodarstwie matce, a na pomocnicę upatrzyły sobie 
+                    piętnastoletnią Kamilę.<br><br> Czasy były trudne, zbliżała się 
+                    wojna, młodej wdowie z trójką dzieci coraz trudniej było
+                    radzić sobie z bejskim gospodarstwem. Co prawda Kamila była
+                    już u ciotek w Krakowie, ale pozostała dwójka też wymagała
+                    troski. Potrzebny był nowy gospodarz.</p>
+                <p>Ładna, pracowita i młoda jeszcze wdowa wpadła w oko 
+                    przystojnemu kawalerowi z pobliskich Ksan. Stanisław 
+                    Niziołek był postawny, męski i zapewne dysponował też innymi
+                    cennymi walorami, bo Hanna Sawicka wyszła za niego za mąż. 
+                    Z drugiej strony nie mogła zbytnio wybrzydzać, bo wolnych
+                    panien bez zobowiązań było wtedy po wsiach na pęczki. Jej 
+                    niewątpliwym atutem było zadbane, solidne gospodarstwo, 
+                    zgromadzone dobra (porcelana, srebrna zastawa, kupony
+                    materiału, złote monety i temu podobne), tylko dwójka dzieci 
+                    na garnuszku i urok osobisty. Hanna Sawicka była bowiem
+                    kobietą różniącą się od wiejskich panien elegancją, wiedzą 
+                    i kulturą. Dbająca o dom, zdolna ogrodniczka, oczytana i 
+                    orientująca się we współczesnym świecie, miała z pewnością i
+                    inne zalety, jakie przywiodły Stanisława do Bejsc.</p>
+                <p>Gospodarowali tam do początku lat 50. Wtedy to, uwiedzeni
+                    perspektywą lepszego bytu, przeprowadzili się z najmłodszą 
+                    córką Anną (ze związku z Sawickim) oraz małym wspólnym 
+                    synkiem Stasiem na Ziemie Odzyskane, do wsi Kopań położonej
+                    opodal Darłowa, a następnie przeprowadzili się do Czaplinka,
+                    gdzie oboje mieszkali do końca życia.</p>
+                <p><br>W Bejscach został Adam. Aż do śmierci prowadził tam 
+                    gospodarstwo. </p> 
+
+            </div>
         </div>
         <div class="interval-2">interval-2</div>
         <div class="gr-ph-title"><span>Hanna i Stanisław mieli pięcioro dzieci:
