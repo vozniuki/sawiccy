@@ -1,129 +1,154 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Language" content="pl">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
         <title>Halina Petraszewska</title>
-        <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet"> 
-        <link rel="stylesheet" href="short-tree-0.css">
-        <base target="_self">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">        
         <style>
-            * {font-family: 'Kurale', serif; margin: 0; font-size:14.5px;}
-            body { margin: 0; background: url('IMAGE/tlotapeta.jpg');
-            }
-            .sh-div {width: 100%;display:grid; grid-template-columns: repeat(20, 5%);
-                     grid-template-rows: repeat(8, auto);margin-top: 43px;
-                     margin-left: 0% ;}
-            .gr-photo-1 {grid-area: 1/5/2/10 ;}
-            .gr-art-1 {grid-area: 1/10/2/17 ; color:#000000; 
-                       background: url('IMAGE/tlo011.jpg');
-                       padding: 5% 10%;}
-            .gr-art-1 p {margin-top: 10px;}
-            .gr-art-1 a {color: white;}
-            .interval-2 {grid-area: 9/1/10/21 ;height: 50px; }
-            .footer-1 {grid-area: 10/5/11/17;}
-            .footer-1 a {color:#000000;}
-            div[class^="footer"] {height: 50px;  padding-top: 12px;}
+            * {font-family: 'Kurale', serif; margin: 0; padding: 0; 
+               font-size:16px; position: relative;}
+            body { margin: 0; background: url('IMAGE/tlotapeta.jpg');  }
+            .sh-div {width: 800px;height: 1800px; margin-top: 43px;}
+            .gr-photo-1 {width: 300px; height: 1800px; float: left;
+                         padding-top: 20px;}
             div[class^="footer"], div[class^="gr-photo"] {
                 background: url('IMAGE/tlo01.jpg');
-                border: 0;color: #000000; size:3px; 
-                text-align: center;}
-            .im-1 {padding: 10% 15% 0 15%;width: 60%;}
-            .im-2 {padding: 10% 10% 0 10%;width: 80%;}
-            .img-p {margin-left: 30px; margin-right: 10px;  margin-bottom: 10px; font-size: 13px; text-align: left; }
-            @media only screen and (max-width: 800px) { * {font-size: 10px;}
-                .interval-2 {height: 2px;}
-                .sh-div {margin-top: 0px;
-                         grid-template-columns: 0% 0% 0% 0% repeat(12, 8.3%);}
-            </style> 
-        </head>
-        <body>
-            <div class="sh-div">
-                <div class="gr-photo-1">
-                    <img class="im-1"  alt="" src="IMAGE/Halina-Pietraszewska-ramka.jpg">
-                    Halina Pietraszewska
-                    <img class="im-1"  alt="" src="IMAGE/Halina%20Pietraszewska%20z%20Felkiem.jpg">
-					Halina z Felkiem
-                    <img class="im-1"  alt="" 
-                         src="IMAGE/Halina%20Pietraszewska%20z%20Felkiem1.jpg">
-						 Halina z Felkiem
-                    <img class="im-1"  alt="" 
-                         src="IMAGE/Halina%20Pietraszewska%20z%20Felkiem2.jpg">
-						 Halina z Felkiem
-                    <img class="im-2"  alt="" 
-                         src="IMAGE/Halina%20z%20rodziną%20i%20znajomymi%20na%20wycieczce.jpg">
-                    <p class="img-p"><br>Na wycieczce. Od lewej: Ewa Czechówna, 
+                border: 0;color: black; text-align: center;}            
+            .img-p {margin-left: 10%; margin-right: 10%; font-size: 14px;
+                    text-align: center; }
+            .im-1-min {position: relative; padding: 40px 15px 0 15px; 
+                       width: 180px; }
+            .im-1-1-min {position: relative; padding: 30px 15px 0 15px; 
+                         width: 180px; }
+            .im-2-min {position: relative; padding: 10% 5% 0 5%;width: 60%; }
+            .im-1-max, .im-3-max {position: absolute; top: 9%; left: 20%;  width: 60%; 
+                                  height: 90%; opacity: 0;}
+            .im-2-max {position: absolute; top: 8%; left: 20%;  width: 60%; 
+                       height: 90%; opacity: 0;}
+            .im-1-max:hover {opacity: 1; top: 20px; width: 300px; height: 250px;
+                             z-index: 99999;}
+            .im-2-max:hover {opacity: 1; top: 0%; width: 400px;
+                             z-index: 99999;}
+            .im-3-max:hover {opacity: 1; top: 30px; width: 300px; height: 340px;
+                             z-index: 99999;}
+            .im-2 {padding: 30px 10px 0 10px; width: 250px; transition: transform .2s;}
+            .im-2:hover {-ms-transform: scale(1.5); -webkit-transform: scale(1.5); /* Safari 3-8 */
+                transform: scale(1.5); z-index: 9999; }
+            .gr-art-1 {width: 500px; height: 1770px; float: right;
+                       color:black;  position: static;
+                       background: url('IMAGE/tlo011.jpg');  
+                       padding: 40px 0px 10px 0px;}
+            .gr-art-1 p {margin-top: 10px; padding-left: 52px; padding-right: 45px; 
+                         text-align: left;            }
+            .gr-art-1 a {color: white;}
+            .interval-1 {width: 800px; height: 50px; }
+            .footer-1 {width: 800px; height: 65px;padding-top: 20px;}
+            .footer-1 a {color:black; }
+        </style>
+    </head>
+    <body>
+    <center>
+        <div class="sh-div">
+            <div class="gr-photo-1">
+                <div>    
+                    <img class="im-1-min"  alt="" src="IMAGE/Halina-Pietraszewska-ramka.jpg">
+                    <img class="im-1-max"  alt="" src="IMAGE/MAX/Pietr i Czech.jpg">
+                    <p class="img-p">Halina Pietraszewska</p>
+                </div>
+                <div>
+                    <img class="im-1-1-min"  alt="" src="IMAGE/Halina%20Pietraszewska%20z%20Felkiem.jpg">
+                    <img class="im-3-max"  alt="" src="IMAGE/MAX/Halina-Felek-Kamila.jpg">
+                    <p class="img-p">Halina z Felkiem</p>
+                </div>
+                <div>    
+                    <img class="im-1-min"  alt="" src="IMAGE/Halina%20Pietraszewska%20z%20Felkiem1.jpg">
+                    <img class="im-3-max"  alt="" src="IMAGE/MAX/Halina i Felek1.jpg">
+                    <p class="img-p">Halina z Felkiem</p>
+                </div>
+                <div>
+                    <img class="im-1-min"  alt="" src="IMAGE/Halina%20Pietraszewska%20z%20Felkiem2.jpg">
+                    <img class="im-2-max"  alt="" src="IMAGE/MAX/Slub Krystyny Sawickiej.jpg">
+                    <p class="img-p">Halina z Felkiem</p>
+                </div>
+                <div>
+                    <img class="im-2"  alt="" src="IMAGE/Halina%20z%20rodziną%20i%20znajomymi%20na%20wycieczce.jpg">
+                    <p class="img-p">Na wycieczce. Od lewej: Ewa Czechówna, 
                         Kamila Sawicka, Halina Pietraszewska, za nią Feliks
-                        Pietraszewski, obok niego znajomy Feliksa,  oraz Zofia Buczkówna, dalsza 
-                        krewna.</br></p>
-                </div>
-                <div class="gr-art-1">
-                    <p> <b>Halina Pietraszewska</b> urodziła się w 1920 roku w Krakowie. Całe życie mieszkała przy ul. Grzegórzeckiej 12, w kamienicy 
-                        swoich rodziców. Od wczesnej młodości pracowała w sławnej 
-                        na cały Kraków piekarni. Potem stała się właścicielką 
-                        rodzinnego interesu i prowadziła go samodzielnie aż 
-                        do śmierci.
-                    <p> Mieszkanie Haliny Pietraszewskiej było przez 
-                        wiele lat ośrodkiem życia rodzinnego. Nie było miesiąca, 
-                        byśmy z moją mamą nie wsiadały do tramwaju numer 1 i nie 
-                        jechały na Grzegórzecką 12. Tam zwykle spotykało się innych 
-                        członków klanu. Najbardziej efektownym gościem była zawsze 
-                        Ewa Czechówna. Ładna, zgrabna i modnie ubrana, bywała w 
-                        świecie i umiejąca o tym świecie ciekawie opowiadać, na tle 
-                        reszty rodziny była rajskim ptakiem.</p>
-                    <p>W prowadzeniu domowego gospodarstwa pomagała 
-                        Halinie długoletnia służąca Barbara. Nie była to osoba o 
-                        anielskim usposobieniu, Kiedy gości było zbyt wielu, 
-                        zaczynała gderać, bo to wiązało się z dodatkowymi pracami. 
-                        Wtedy w kranach była tam tylko zimna woda, a żeby coś 
-                        ugotować, trzeba było rozpalić w wielkim piecu kuchennym. </p>
-                    <p>Goście zbierali się w kuchni. Prócz stołu, pieca, szafek i 
-                        prostych witrynek, była tam też kozetka, na jakiej spała 
-                        Barbara. We wnęce ukrytej za ceratową; zasłonką z czasem 
-                        zjawiła się wanna.
-                    </p>
-                    <p>Barbara starała się na wszelkie sposoby zniechęcić gości do 
-                        przychodzenia, ale ja miałam jakieś fory u niej, bo kiedy 
-                        tylko zjawiałam się w drzwiach, wyjmowała ogromną patelnię, 
-                        w metalowej misce utrzepywała widelcem jajka na pianę,; 
-                        dodawała cukru i smażyła dla mnie wielki, puszysty omlet. 
-                        To był rytuał i nie pamiętam, by cokolwiek kiedykolwiek 
-                        go zakłóciło.</p>
-                    <p> Halina nie wyszła za mąż, lecz przez całe dorosłe życie  
-                        związana była z Feliksem Pietraszewskim, kuzynem (jej ojciec 
-                        i jego ojciec byli braćmi). Halina i Feliks otrzymali 
-                        dyspensę na zawarcie małżeństwa mimo pokrewieństwa, lecz do 
-                        ślubu nie doszło. Feliks mieszkał jednak z Halą w tym samym 
-                        mieszkaniu. Zajmowali dwa różne (przechodnie) pokoje.</p>
-                    <p> W młodości uchodzili nawet za parę idealną. Mówiło się o 
-                        nich: Hala z Felkiem, Felek z Halą. Byli  nierozłączni.</p>
-                    <p>Parę musiały łączyć silne więzy, gdyż nigdy się nie 
-                        rozstawali, choć - w starszym wieku - nieustannie kłócili.
-                    <p>Pamiętam, że ilekroć Halina przechodziła przez pokój, w 
-                        jakim rezydował Felek, z łóżka rozlegało się mruczenie osoby 
-                        nie do końca trzeźwej. Halina zwykle ignorowała te odgłosy, 
-                        zapewne nie chcąc wywoływać przy gościach niepotrzebnych 
-                        scysji. Ale nigdy się na niego nie skarżyła.</p>
-                    <p>Była z pewnością osobą zamożną, ale żyła skromnie, bez 
-                        przepychu. Miała niemal przez całe życie te same meble, a jej 
-                        garderoba była modna inaczej. </p>
-                    <p>Chętnie udzielała się rodzinnie. Przychodziła także do nas na 
-                        domowe uroczystości, a w prezencie wręczała mojemu tacie wódkę, 
-                        a mojej mamie i mnie czekoladki. Jedno i drugie robiło na 
-                        nas wielkie wrażenie,  bo było z Pewexu, za dolary!</p>
-                    <p>Jeździła także na wycieczki, jakie gromadziły członków 
-                        rodziny, ich krewnych i znajomych. Nie była jednak duszą 
-                        towarzystwa, choć trudno by też było mówić, że była 
-                        milczkiem.</p>
-                    <p>Miało się wrażenie, że celem, sensem, osią i głównym zajęciem 
-                        jej życia była piekarnia. Piekarnia Pietraszewskich przy ulicy 
-                        Grzegórzeckiej 12 w Krakowie.<br> Halina zmarła 18 listopada 1978 roku, Feliks dwa lata wcześniej. </p>
-                </div>
-                <div class="interval-1"></div>
-                <div class="interval-2"></div>
-                <div class="footer-1">
-                    <a href="Sawiccy-z-Bejsc.html">Wróć do strony Sawiccy z Bejsc</a>
+                        Pietraszewski, obok niego znajomy Feliksa,  oraz Zofia
+                        Buczkówna, dalsza krewna.</p>
                 </div>
             </div>
-        </body>
-    </html>
+            <div class="gr-art-1">
+                <p> <b>Halina Pietraszewska</b> od 
+                    urodzenia mieszkała przy ul. Grzegórzeckiej 12, w kamienicy 
+                    swoich rodziców. Od wczesnej młodości pracowała w sławnej 
+                    na cały Kraków piekarni. Potem stała się właścicielką 
+                    rodzinnego interesu i prowadziła go samodzielnie aż 
+                    do śmierci.
+                <p> Mieszkanie Haliny Pietraszewskiej było przez 
+                    wiele lat ośrodkiem życia rodzinnego. Nie było miesiąca, 
+                    byśmy z moją mamą nie wsiadały do tramwaju numer 1 i nie 
+                    jechały na Grzegórzecką 12. Tam zwykle spotykało się innych 
+                    członków klanu. Najbardziej efektownym gościem była zawsze 
+                    Ewa Czechówna. Ładna, zgrabna i modnie ubrana, bywała w 
+                    świecie i umiejąca o tym świecie ciekawie opowiadać, na tle 
+                    reszty rodziny była rajskim ptakiem.</p>
+                <p>W prowadzeniu domowego gospodarstwa pomagała 
+                    Halinie długoletnia służąca Barbara. Nie była to osoba o 
+                    anielskim usposobieniu, Kiedy gości było zbyt wielu, 
+                    zaczynała gderać, bo to wiązało się z dodatkowymi pracami. 
+                    Wtedy w kranach była tam tylko zimna woda, a żeby coś 
+                    ugotować, trzeba było rozpalić w wielkim piecu kuchennym. </p>
+                <p>Goście zbierali się w kuchni. Prócz stołu, pieca, szafek i 
+                    prostych witrynek, była tam też kozetka, na jakiej spała 
+                    Barbara. We wnęce ukrytej za ceratową; zasłonką z czasem 
+                    zjawiła się wanna.
+                </p>
+                <p>Barbara starała się na wszelkie sposoby zniechęcić gości do 
+                    przychodzenia, ale ja miałam jakieś fory u niej, bo kiedy 
+                    tylko zjawiałam się w drzwiach, wyjmowała ogromną patelnię, 
+                    w metalowej misce utrzepywała widelcem jajka na pianę,; 
+                    dodawała cukru i smażyła dla mnie wielki, puszysty omlet. 
+                    To był rytuał i nie pamiętam, by cokolwiek kiedykolwiek 
+                    go zakłóciło.</p>
+                <p> Halina nie wyszła za mąż, lecz przez całe dorosłe życie  
+                    związana była z Feliksem Pietraszewskim, kuzynem (jej ojciec 
+                    i jego ojciec byli braćmi). Halina i Feliks otrzymali 
+                    dyspensę na zawarcie małżeństwa mimo pokrewieństwa, lecz do 
+                    ślubu nie doszło. Feliks mieszkał jednak z Halą w tym samym 
+                    mieszkaniu. Zajmowali dwa różne (przechodnie) pokoje.</p>
+                <p> W młodości uchodzili nawet za parę idealną. Mówiło się o 
+                    nich: Hala z Felkiem, Felek z Halą. Byli  nierozłączni.</p>
+                <p>Parę musiały łączyć silne więzy, gdyż nigdy się nie 
+                    rozstawali, choć - w starszym wieku - nieustannie kłócili.
+                <p>Pamiętam, że ilekroć Halina przechodziła przez pokój, w 
+                    jakim rezydował Felek, z łóżka rozlegało się mruczenie osoby 
+                    nie do końca trzeźwej. Halina zwykle ignorowała te odgłosy, 
+                    zapewne nie chcąc wywoływać przy gościach niepotrzebnych 
+                    scysji. Ale nigdy się na niego nie skarżyła.</p>
+                <p>Była z pewnością osobą zamożną, ale żyła skromnie, bez 
+                    przepychu. Miała niemal przez całe życie te same meble, a jej 
+                    garderoba była modna inaczej. </p>
+                <p>Chętnie udzielała się rodzinnie. Przychodziła także do nas na 
+                    domowe uroczystości, a w prezencie wręczała mojemu tacie wódkę, 
+                    a mojej mamie i mnie czekoladki. Jedno i drugie robiło na 
+                    nas wielkie wrażenie,  bo było z Pewexu, za dolary!</p>
+                <p>Jeździła także na wycieczki, jakie gromadziły członków 
+                    rodziny, ich krewnych i znajomych. Nie była jednak duszą 
+                    towarzystwa, choć trudno by też było mówić, że była 
+                    milczkiem.</p>
+                <p>Miało się wrażenie, że celem, sensem, osią i głównym zajęciem 
+                    jej życia była piekarnia. Piekarnia Pietraszewskich przy ulicy 
+                    Grzegórzeckiej 12 w Krakowie.<br> Halina zmarła 18 listopada 
+                    1978 roku, Feliks dwa lata wcześniej. </p>
+            </div>
+        </div>
+        <div class="interval-1"></div>
+                <div class="interval-2"></div>
+        <div class="footer-1">
+            <a href="Sawiccy-z-Bejsc.html">Wróć do strony Sawiccy z Bejscy</a>
+        </div>
+    </center>
+</body>
+</html>
