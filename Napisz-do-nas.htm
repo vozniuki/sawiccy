@@ -3,39 +3,80 @@
 <head>
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
 <meta http-equiv="Content-Language" content="pl">
-<title>Chcielibyśmy wiedzieć co myślisz o naszej witrynie sieci web</title>
+<title>Wyra� opini� o naszej witrynie sieci web</title>
 </head>
 
 <body>
 
 <p>
-<!--webbot bot="PurpleText" preview="Księga gości - użyj tej strony, aby zbierać reakcje odwiedzających na temat Twojej witryny sieci web. Wszystkie komentarze przesłane przez użytkowników przejdą domyślnie na inną stronę o nazwie guestlog.htm, która następnie zostanie dołączona poniżej. Jeżeli chcesz użyć innego pliku do przechwytywania komentarzy, zmień nazwę pliku zaznaczoną w oknie dialogowym Właściwości formularza i w adresie URL strony składnika Dołącz poniżej formularza." -->
+<!--webbot bot="PurpleText" preview="Formularz opinii - dostosuj formularz poni�ej, aby zbiera� potrzebne informacje. Domy�lnie dane formularza s� zapisywane w pliku tekstowym na serwerze sieci web, za pomoc� sk�adnika programu FrontPage Zapisz wyniki. Edytuj w�a�ciwo�ci formularza, aby to zmieni�." -->
 </p>
 <hr>
-<p>Bardzo prosimy wszystkich odwiedzających, by zechcieli podzielić się z nami 
-swoimi opiniami na temat tej strony. Członków rodziny prosimy zaś, by uzupełnili 
-dane na temat swoich rodzin. Oczywiście niezbędne są zdjęcia, pokazy slajdów czy 
-filmy rodzinne. </p>
-<p>Komentarze można zamieszczać poniżej, a informacje niepubliczne i zdjęcia (do 
-wykorzystania na stronie) prosimy  <a href="Wyszukiwanie.htm" kierować  
-    tutaj.&nbsp;&nbsp; </p></a>
+<p>Wyra� opini� o naszej witrynie sieci web, naszych produktach, naszej 
+organizacji oraz na dowolne inne tematy. Wszelkie komentarze i propozycje s� 
+mile widziane.</p>
 <form method="POST" action="--WEBBOT-SELF--">
-  <!--webbot bot="SaveResults" u-file="guestlog.htm" s-format="HTML/DL" s-label-fields="TRUE" s-builtin-fields="Date Time REMOTE_USER" s-form-fields -->
-  <h2><strong>Dodaj swoje komentarze</strong></h2>
-  <p>assddasadscc</p>
-  <p><input type="submit" value="Prześlij komentarze">
-  <input type="reset" value="Wyczyść komentarze"><br>
-  <br>
-  <em>Po przesłaniu komentarzy może być konieczne ponowne załadowanie tej strony 
-  do przeglądarki, aby zobaczyć swoje dodatki do dziennika.</em></p>
+  <!--webbot bot="SaveResults" u-file="C:\Users\ZAGRODA\Documents\Moje witryny\GITHUB\_private\feedback.txt" s-format="TEXT/TSV" s-label-fields="TRUE" s-builtin-fields="Date Time REMOTE_NAME REMOTE_USER HTTP_USER_AGENT" s-form-fields -->
+  <p><strong>Jaki rodzaj komentarza chcesz wys�a�?</strong></p>
+  <dl>
+    <dd><input type="radio" name="TypKomentarza" value="Skarga">Skarga
+    <input type="radio" name="TypKomentarza" value="Problem">Problem
+    <input type="radio" checked name="TypKomentarza" value="Propozycja">Propozycja
+    <input type="radio" name="TypKomentarza" value="Gratulacje">Gratulacje</dd>
+  </dl>
+  <p><strong>Co chcesz skomentowa�?</strong></p>
+  <dl>
+    <dd><select name="Temat" size="1">
+    <option selected>Witryna sieci Web</option>
+    <option>Firma</option>
+    <option>Produkty</option>
+    <option>Magazyn</option>
+    <option>Pracownik</option>
+    <option>(Inne)</option>
+    </select> Inne:
+    <input type="text" size="26" maxlength="256" name="InnyTemat"></dd>
+  </dl>
+  <p><strong>Wprowad� swoje komentarze w miejsce poni�ej:</strong></p>
+  <dl>
+    <dd><textarea name="Komentarze" rows="5" cols="42"></textarea></dd>
+  </dl>
+  <p><strong>Poinformuj nas, jak mamy si� z Tob� skontaktowa�:</strong></p>
+  <dl>
+    <dd>
+    <table>
+      <tr>
+        <td>Imi� i nazwisko</td>
+        <td><input type="text" size="35" maxlength="256" name="NazwaKlienta"></td>
+      </tr>
+      <tr>
+        <td>E-mail</td>
+        <td><input type="text" size="35" maxlength="256" name="EmailKlienta"></td>
+      </tr>
+      <tr>
+        <td>Tel.</td>
+        <td><input type="text" size="35" maxlength="256" name="TelefonKlienta"></td>
+      </tr>
+      <tr>
+        <td>Faks</td>
+        <td><input type="text" size="35" maxlength="256" name="FaksKlienta"></td>
+      </tr>
+    </table>
+    </dd>
+  </dl>
+  <dl>
+    <dd><input type="checkbox" name="WymaganyKontakt" value="WymaganyKontakt"> 
+    Prosz� o mo�liwie najszybszy kontakt w tej sprawie.</dd>
+  </dl>
+  <p><input type="submit" value="Prze�lij komentarze">
+  <input type="reset" value="Wyczy�� formularz"></p>
 </form>
-<!--webbot bot="Include" tag="BODY" u-include="guestlog.htm" startspan --><p><em>[guestlog.htm]</em></p><!--webbot bot="Include" endspan i-checksum="9016" --><hr>
+<hr>
 <h5>Miejsce na informacje o autorze.<br>
-Copyright © 2018 by Zdzisława i Mykola Vozniuk. Wszelkie prawa zastrzeżone.<br>
+Copyright � 2001 [NazwaOrganizacji]. Wszelkie prawa zastrze�one.<br>
 Poprawione:
-<!--webbot bot="TimeStamp" s-type="Edited" s-format="%m/%d/%y %H:%M:%S %Z" startspan -->02/03/18 20:35:40 +0100<!--webbot bot="TimeStamp" endspan i-checksum="33072" -->.</h5>
+<!--webbot bot="TimeStamp" s-type="EDITED" s-format="%d-%m-%y" startspan -->03-02-18<!--webbot bot="TimeStamp" endspan i-checksum="13258" -->.</h5>
 
 </body>
 
