@@ -1,0 +1,2 @@
+﻿1517741096|::1|Закладка|Mozilla|unix|/sawiccy_site/index.html|1517741096
+1517741587|127.0.0.1|Закладка|Firefox|unix|/sawiccy_site/index.html|1517741587
