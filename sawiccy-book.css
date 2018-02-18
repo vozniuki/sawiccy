@@ -40,9 +40,11 @@
 }
 .blink-f-p:hover {
     color: green;
+    cursor: pointer;
 }
 .blink-b-p:hover {
     color: green;
+    cursor: pointer;
 }
 /* INDEX */
 #myDIV {
