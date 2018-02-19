@@ -1,25 +1,23 @@
 #myDIV, #myDIV-1, #myDIV-2, #myDIV-3, #myDIV-4 {
-    width: 100%; 
-    height: 100%; 
     position: absolute;
     transform-origin: left top 0; 
     transition: transform 2s;
 }
-#myDIV-2, #myDIV-3, #myDIV-4 {
+#myDIV-1, #myDIV-2, #myDIV-3, #myDIV-4 {
     display: none;
 }
 .blink-f, .blink-b {
     position: fixed;
-    top: 50%;
+    top: 200px;
     width: 40px;
     height: 40px;
 }
 .blink-f {
-    left: 90%;
+    left: 80%;
     background-color: #793d0c;
 }
 .blink-b {
-    left: 10%;
+    left: 20%;
     background-color: white;
 }
 .blink-f-p, .blink-b-p {
@@ -48,12 +46,12 @@
 }
 /* INDEX */
 #myDIV {
+    width: 100%; 
+    padding-bottom: 50px;
     background-color: #663300;
-    height: 110%;
 }
 .img-index {
-    width: 50%; 
-    margin-left: 25%;
+    width: 600px; 
     margin-top: 1%
 }
 
@@ -65,6 +63,10 @@
     font-size: 17px;
 }
 body {
+}
+#myDIV-1 {
+    width: 100%; 
+
 }
 .sh-div {
     background: url('IMAGE/tlostarypapier.jpg');
@@ -94,6 +96,9 @@ a {
     margin-bottom: 10px;
 }
 /* Najstarsi-przodkowie */
+#myDIV-2 {
+    width: 100%; 
+ }
 .sh-div-n-p {
     width: 100%;  
     border: 0px ridge white;
@@ -124,6 +129,10 @@ a {
     padding-bottom: 50px;
 }
 /* WEDROWKA */
+ #myDIV-3 {
+    width: 100%; 
+}
+
 .sh-div-w {
     background: url('IMAGE/tlostarypapier3.jpg');
     font-size: 17px;
@@ -149,10 +158,10 @@ a {
 }
 /* Sawiccy z Bejsc */
 #myDIV-4 {
-    height: 120%;
+    width: 100%; 
     background: url('IMAGE/fon022.jpg'); 
     background-size: 100% 100%;
-
+    padding-bottom: 50px;
 }
 .sh-div-sb {
     width: 738px;
