@@ -13,11 +13,11 @@
     height: 40px;
 }
 .blink-f {
-    left: 80%;
+    left: 85%;
     background-color: #793d0c;
 }
 .blink-b {
-    left: 20%;
+    left: 15%;
     background-color: white;
 }
 .blink-f-p, .blink-b-p {
